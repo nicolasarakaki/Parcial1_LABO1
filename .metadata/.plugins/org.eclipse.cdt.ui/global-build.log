@@ -1,0 +1,2926 @@
+18:59:50 **** Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o   
+Finished building target: Parcial
+ 
+19:00:25 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:02:06 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/validaciones.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/validaciones.d" -MT"src/validaciones.o" -o "src/validaciones.o" "../src/validaciones.c"
+../src/validaciones.c:13:19: fatal error: conio.h: No existe el fichero o el directorio
+ #include <conio.h>
+src/subdir.mk:21: fallo en las instrucciones para el objetivo 'src/validaciones.o'
+                   ^
+compilation terminated.
+make: *** [src/validaciones.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:02:16 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/validaciones.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/validaciones.d" -MT"src/validaciones.o" -o "src/validaciones.o" "../src/validaciones.c"
+Finished building: ../src/validaciones.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:02:30 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/validaciones.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/validaciones.d" -MT"src/validaciones.o" -o "src/validaciones.o" "../src/validaciones.c"
+Finished building: ../src/validaciones.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:03:35 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c:16:22: fatal error: Orquesta.h: No existe el fichero o el directorio
+ #include "Orquesta.h"
+                      ^
+compilation terminated.
+make: *** [src/clientes.o] Error 1
+src/subdir.mk:24: fallo en las instrucciones para el objetivo 'src/clientes.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:03:45 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:06:46 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c:19:21: fatal error: cliente.h: No existe el fichero o el directorio
+ #include "cliente.h"
+                     ^
+compilation terminated.
+src/subdir.mk:24: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:06:57 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:35:5: error: unknown type name ‘eOrquesta’
+     eOrquesta orquesta[TAM_ORQUESTA];
+     ^~~~~~~~~
+../src/Parcial.c:35:24: error: ‘TAM_ORQUESTA’ undeclared (first use in this function)
+     eOrquesta orquesta[TAM_ORQUESTA];
+                        ^~~~~~~~~~~~
+../src/Parcial.c:35:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/Parcial.c:36:5: warning: implicit declaration of function ‘inicializar_Orquesta’ [-Wimplicit-function-declaration]
+     inicializar_Orquesta(orquesta, TAM_ORQUESTA);
+src/subdir.mk:24: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+     ^~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:37:5: warning: implicit declaration of function ‘hardcodear_Orquesta’ [-Wimplicit-function-declaration]
+     hardcodear_Orquesta(orquesta);
+     ^~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:39:5: error: unknown type name ‘eMusico’
+     eMusico musico[TAM_MUSICO];
+     ^~~~~~~
+../src/Parcial.c:39:20: error: ‘TAM_MUSICO’ undeclared (first use in this function)
+     eMusico musico[TAM_MUSICO];
+                    ^~~~~~~~~~
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_Musico’ [-Wimplicit-function-declaration]
+     inicializar_Musico(musico, TAM_MUSICO);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:41:5: warning: implicit declaration of function ‘hardcodear_Musico’ [-Wimplicit-function-declaration]
+     hardcodear_Musico(musico);
+     ^~~~~~~~~~~~~~~~~
+../src/Parcial.c:50:20: warning: implicit declaration of function ‘alta_Orquesta’ [-Wimplicit-function-declaration]
+                 if(alta_Orquesta(orquesta, TAM_ORQUESTA, orquestaID)==-1)
+                    ^~~~~~~~~~~~~
+../src/Parcial.c:54:29: warning: implicit declaration of function ‘buscar_OrquestaById’ [-Wimplicit-function-declaration]
+                     index = buscar_OrquestaById(orquesta, orquestaID, TAM_ORQUESTA);
+                             ^~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:57:21: warning: implicit declaration of function ‘print_Orquesta’ [-Wimplicit-function-declaration]
+                     print_Orquesta(orquesta, index, TAM_ORQUESTA);
+                     ^~~~~~~~~~~~~~
+../src/Parcial.c:67:24: warning: implicit declaration of function ‘baja_Orquesta’ [-Wimplicit-function-declaration]
+                     if(baja_Orquesta(orquesta, TAM_ORQUESTA)==-1)
+                        ^~~~~~~~~~~~~
+../src/Parcial.c:78:21: warning: implicit declaration of function ‘listar_Orquesta’ [-Wimplicit-function-declaration]
+                     listar_Orquesta(orquesta, TAM_ORQUESTA);
+                     ^~~~~~~~~~~~~~~
+../src/Parcial.c:92:20: warning: implicit declaration of function ‘alta_Musico’ [-Wimplicit-function-declaration]
+                 if(alta_Musico(musico, TAM_MUSICO, musicoID, orquesta, TAM_ORQUESTA)==-1)
+                    ^~~~~~~~~~~
+../src/Parcial.c:96:29: warning: implicit declaration of function ‘buscar_MusicoById’ [-Wimplicit-function-declaration]
+                     index = buscar_MusicoById(musico, musicoID, TAM_MUSICO);
+                             ^~~~~~~~~~~~~~~~~
+../src/Parcial.c:99:21: warning: implicit declaration of function ‘print_Musico’ [-Wimplicit-function-declaration]
+                     print_Musico(musico, index, TAM_MUSICO);
+                     ^~~~~~~~~~~~
+../src/Parcial.c:109:24: warning: implicit declaration of function ‘editar_Musico’ [-Wimplicit-function-declaration]
+                     if(editar_Musico(musico, TAM_MUSICO, orquesta, TAM_ORQUESTA)==-1)
+                        ^~~~~~~~~~~~~
+../src/Parcial.c:120:24: warning: implicit declaration of function ‘baja_Musico’ [-Wimplicit-function-declaration]
+                     if(baja_Musico(musico, TAM_MUSICO)==-1)
+                        ^~~~~~~~~~~
+../src/Parcial.c:131:21: warning: implicit declaration of function ‘listar_Musico’ [-Wimplicit-function-declaration]
+                     listar_Musico(musico, TAM_MUSICO);
+                     ^~~~~~~~~~~~~
+../src/Parcial.c:139:17: warning: implicit declaration of function ‘listar_MusicosXOquesta’ [-Wimplicit-function-declaration]
+                 listar_MusicosXOquesta(musico, TAM_MUSICO, orquesta, TAM_ORQUESTA);
+                 ^~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:39:13: warning: unused variable ‘musico’ [-Wunused-variable]
+     eMusico musico[TAM_MUSICO];
+             ^~~~~~
+../src/Parcial.c:35:15: warning: unused variable ‘orquesta’ [-Wunused-variable]
+     eOrquesta orquesta[TAM_ORQUESTA];
+               ^~~~~~~~
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:12:11 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+In file included from ../src/Parcial.c:19:0:
+../src/clientes.h:24:8: error: duplicate member ‘id’
+    int id;
+        ^~
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:75:32: error: ‘flagHardcode’ undeclared (first use in this function)
+                 if(flag1==1 || flagHardcode==1)
+                                ^~~~~~~~~~~~
+../src/Parcial.c:75:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/Parcial.c:92:20: warning: implicit declaration of function ‘alta_Musico’ [-Wimplicit-function-declaration]
+                 if(alta_Musico(musico, TAM_MUSICO, musicoID, cliente, TAM_CLIENTE)==-1)
+src/subdir.mk:24: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+                    ^~~~~~~~~~~
+../src/Parcial.c:92:32: error: ‘musico’ undeclared (first use in this function)
+                 if(alta_Musico(musico, TAM_MUSICO, musicoID, cliente, TAM_CLIENTE)==-1)
+                                ^~~~~~
+../src/Parcial.c:92:40: error: ‘TAM_MUSICO’ undeclared (first use in this function)
+                 if(alta_Musico(musico, TAM_MUSICO, musicoID, cliente, TAM_CLIENTE)==-1)
+                                        ^~~~~~~~~~
+../src/Parcial.c:92:52: error: ‘musicoID’ undeclared (first use in this function)
+                 if(alta_Musico(musico, TAM_MUSICO, musicoID, cliente, TAM_CLIENTE)==-1)
+                                                    ^~~~~~~~
+../src/Parcial.c:96:29: warning: implicit declaration of function ‘buscar_MusicoById’ [-Wimplicit-function-declaration]
+                     index = buscar_MusicoById(musico, musicoID, TAM_MUSICO);
+                             ^~~~~~~~~~~~~~~~~
+../src/Parcial.c:99:21: warning: implicit declaration of function ‘print_Musico’ [-Wimplicit-function-declaration]
+                     print_Musico(musico, index, TAM_MUSICO);
+                     ^~~~~~~~~~~~
+../src/Parcial.c:101:21: error: ‘flag2’ undeclared (first use in this function)
+                     flag2=1;
+                     ^~~~~
+../src/Parcial.c:109:24: warning: implicit declaration of function ‘editar_Musico’ [-Wimplicit-function-declaration]
+                     if(editar_Musico(musico, TAM_MUSICO, cliente, TAM_CLIENTE)==-1)
+                        ^~~~~~~~~~~~~
+../src/Parcial.c:120:24: warning: implicit declaration of function ‘baja_Musico’ [-Wimplicit-function-declaration]
+                     if(baja_Musico(musico, TAM_MUSICO)==-1)
+                        ^~~~~~~~~~~
+../src/Parcial.c:131:21: warning: implicit declaration of function ‘listar_Musico’ [-Wimplicit-function-declaration]
+                     listar_Musico(musico, TAM_MUSICO);
+                     ^~~~~~~~~~~~~
+../src/Parcial.c:139:17: warning: implicit declaration of function ‘listar_MusicosXOquesta’ [-Wimplicit-function-declaration]
+                 listar_MusicosXOquesta(musico, TAM_MUSICO, cliente, TAM_CLIENTE);
+                 ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:15:30 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+In file included from ../src/Parcial.c:19:0:
+../src/clientes.h:24:8: error: duplicate member ‘id’
+    int id;
+        ^~
+make: *** [src/Parcial.o] Error 1
+src/subdir.mk:24: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:15:40 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘hardcodear_Cliente’:
+../src/clientes.c:67:8: warning: missing braces around initializer [-Wmissing-braces]
+        {1, "AAA201", "weqqew", 1, FALSE},
+        ^
+../src/clientes.c:67:8: note: (near initialization for ‘auxlist[0]’)
+../src/clientes.c:68:8: warning: missing braces around initializer [-Wmissing-braces]
+        {2, "DFR234", "tyutyu", 2, FALSE},
+        ^
+../src/clientes.c:68:8: note: (near initialization for ‘auxlist[1]’)
+../src/clientes.c:69:8: warning: missing braces around initializer [-Wmissing-braces]
+        {3, "GFT564", "asdasd", 1, FALSE},
+        ^
+../src/clientes.c:69:8: note: (near initialization for ‘auxlist[2]’)
+../src/clientes.c:70:8: warning: missing braces around initializer [-Wmissing-braces]
+        {4, "ACD321", "bnmnmm", 3, FALSE},
+        ^
+../src/clientes.c:70:8: note: (near initialization for ‘auxlist[3]’)
+../src/clientes.c:71:8: warning: missing braces around initializer [-Wmissing-braces]
+        {5, "HTD656", "zxzxxz", 2, FALSE},
+        ^
+../src/clientes.c:71:8: note: (near initialization for ‘auxlist[4]’)
+../src/clientes.c:72:8: warning: missing braces around initializer [-Wmissing-braces]
+        {6, "QSZ435", "qqqqqq", 3, FALSE},
+        ^
+../src/clientes.c:72:8: note: (near initialization for ‘auxlist[5]’)
+../src/clientes.c:66:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+../src/clientes.c:66:5: note: (near initialization for ‘auxlist’)
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/validaciones.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/validaciones.d" -MT"src/validaciones.o" -o "src/validaciones.o" "../src/validaciones.c"
+Finished building: ../src/validaciones.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/validaciones.o   
+./src/Parcial.o: En la función `main':
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:50: referencia a `alta_Cliente' sin definir
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:54: referencia a `buscar_ClienteById' sin definir
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:57: referencia a `print_Cliente' sin definir
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:78: referencia a `listar_Cliente' sin definir
+collect2: error: ld returned 1 exit status
+makefile:30: fallo en las instrucciones para el objetivo 'Parcial'
+make: *** [Parcial] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:17:00 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/validaciones.o   
+./src/Parcial.o: En la función `main':
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:50: referencia a `alta_Cliente' sin definir
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:54: referencia a `buscar_ClienteById' sin definir
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:57: referencia a `print_Cliente' sin definir
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:78: referencia a `listar_Cliente' sin definir
+collect2: error: ld returned 1 exit status
+makefile:30: fallo en las instrucciones para el objetivo 'Parcial'
+make: *** [Parcial] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:18:29 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘hardcodear_Cliente’:
+../src/clientes.c:67:8: warning: missing braces around initializer [-Wmissing-braces]
+        {1, "AAA201", "weqqew", 1, FALSE},
+        ^
+../src/clientes.c:67:8: note: (near initialization for ‘auxlist[0]’)
+../src/clientes.c:68:8: warning: missing braces around initializer [-Wmissing-braces]
+        {2, "DFR234", "tyutyu", 2, FALSE},
+        ^
+../src/clientes.c:68:8: note: (near initialization for ‘auxlist[1]’)
+../src/clientes.c:69:8: warning: missing braces around initializer [-Wmissing-braces]
+        {3, "GFT564", "asdasd", 1, FALSE},
+        ^
+../src/clientes.c:69:8: note: (near initialization for ‘auxlist[2]’)
+../src/clientes.c:70:8: warning: missing braces around initializer [-Wmissing-braces]
+src/subdir.mk:24: fallo en las instrucciones para el objetivo 'src/clientes.o'
+        {4, "ACD321", "bnmnmm", 3, FALSE},
+        ^
+../src/clientes.c:70:8: note: (near initialization for ‘auxlist[3]’)
+../src/clientes.c:71:8: warning: missing braces around initializer [-Wmissing-braces]
+        {5, "HTD656", "zxzxxz", 2, FALSE},
+        ^
+../src/clientes.c:71:8: note: (near initialization for ‘auxlist[4]’)
+../src/clientes.c:72:8: warning: missing braces around initializer [-Wmissing-braces]
+        {6, "QSZ435", "qqqqqq", 3, FALSE},
+        ^
+../src/clientes.c:72:8: note: (near initialization for ‘auxlist[5]’)
+../src/clientes.c:66:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+../src/clientes.c:66:5: note: (near initialization for ‘auxlist’)
+../src/clientes.c: In function ‘alta_Cliente’:
+../src/clientes.c:110:29: error: ‘eCliente {aka struct <anonymous>}’ has no member named ‘nombre’
+         if(getString(auxList.nombre, TAM_NOMBRE , 3, "\nEscriba el nombre: ", "Error, intente nuevamente\n") == 0
+                             ^
+../src/clientes.c:111:29: error: ‘eCliente {aka struct <anonymous>}’ has no member named ‘lugar’
+         && getString(auxList.lugar, TAM_LUGAR, 3, "\nEscriba el lugar: ", "Error, intente nuevamente\n") == 0
+                             ^
+../src/clientes.c:111:37: error: ‘TAM_LUGAR’ undeclared (first use in this function)
+         && getString(auxList.lugar, TAM_LUGAR, 3, "\nEscriba el lugar: ", "Error, intente nuevamente\n") == 0
+                                     ^~~~~~~~~
+../src/clientes.c:111:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/clientes.c:112:30: error: ‘eCliente {aka struct <anonymous>}’ has no member named ‘tipo’
+         && getNumInt(&auxList.tipo, 3, 0, 3, "\n1*Sinfonica\n2*Filarmonica\n3*Camara\n\nIngrese el tipo de Cliente: ", "Error\n") == 0)
+                              ^
+make: *** [src/clientes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:23:22 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘hardcodear_Cliente’:
+../src/clientes.c:67:8: warning: missing braces around initializer [-Wmissing-braces]
+        {1, "AAA201", "weqqew", 1, FALSE},
+        ^
+../src/clientes.c:67:8: note: (near initialization for ‘auxlist[0]’)
+../src/clientes.c:68:8: warning: missing braces around initializer [-Wmissing-braces]
+        {2, "DFR234", "tyutyu", 2, FALSE},
+        ^
+../src/clientes.c:68:8: note: (near initialization for ‘auxlist[1]’)
+../src/clientes.c:69:8: warning: missing braces around initializer [-Wmissing-braces]
+        {3, "GFT564", "asdasd", 1, FALSE},
+        ^
+../src/clientes.c:69:8: note: (near initialization for ‘auxlist[2]’)
+../src/clientes.c:70:8: warning: missing braces around initializer [-Wmissing-braces]
+        {4, "ACD321", "bnmnmm", 3, FALSE},
+        ^
+../src/clientes.c:70:8: note: (near initialization for ‘auxlist[3]’)
+../src/clientes.c:71:8: warning: missing braces around initializer [-Wmissing-braces]
+        {5, "HTD656", "zxzxxz", 2, FALSE},
+        ^
+../src/clientes.c:71:8: note: (near initialization for ‘auxlist[4]’)
+../src/clientes.c:72:8: warning: missing braces around initializer [-Wmissing-braces]
+        {6, "QSZ435", "qqqqqq", 3, FALSE},
+        ^
+../src/clientes.c:72:8: note: (near initialization for ‘auxlist[5]’)
+../src/clientes.c:66:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+../src/clientes.c:66:5: note: (near initialization for ‘auxlist’)
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/validaciones.o   
+./src/Parcial.o: En la función `main':
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:57: referencia a `print_Cliente' sin definir
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:78: referencia a `listar_Cliente' sin definir
+makefile:30: fallo en las instrucciones para el objetivo 'Parcial'
+collect2: error: ld returned 1 exit status
+make: *** [Parcial] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:26:54 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘hardcodear_Cliente’:
+../src/clientes.c:67:8: warning: missing braces around initializer [-Wmissing-braces]
+        {1, "AAA201", "weqqew", 1, FALSE},
+        ^
+../src/clientes.c:67:8: note: (near initialization for ‘auxlist[0]’)
+../src/clientes.c:68:8: warning: missing braces around initializer [-Wmissing-braces]
+        {2, "DFR234", "tyutyu", 2, FALSE},
+        ^
+../src/clientes.c:68:8: note: (near initialization for ‘auxlist[1]’)
+../src/clientes.c:69:8: warning: missing braces around initializer [-Wmissing-braces]
+        {3, "GFT564", "asdasd", 1, FALSE},
+        ^
+../src/clientes.c:69:8: note: (near initialization for ‘auxlist[2]’)
+../src/clientes.c:70:8: warning: missing braces around initializer [-Wmissing-braces]
+        {4, "ACD321", "bnmnmm", 3, FALSE},
+        ^
+../src/clientes.c:70:8: note: (near initialization for ‘auxlist[3]’)
+../src/clientes.c:71:8: warning: missing braces around initializer [-Wmissing-braces]
+        {5, "HTD656", "zxzxxz", 2, FALSE},
+        ^
+../src/clientes.c:71:8: note: (near initialization for ‘auxlist[4]’)
+../src/clientes.c:72:8: warning: missing braces around initializer [-Wmissing-braces]
+        {6, "QSZ435", "qqqqqq", 3, FALSE},
+        ^
+../src/clientes.c:72:8: note: (near initialization for ‘auxlist[5]’)
+../src/clientes.c:66:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+../src/clientes.c:66:5: note: (near initialization for ‘auxlist’)
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:26:57 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:28:29 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:28:32 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:38:30 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:65:20: error: ‘flag2’ undeclared (first use in this function)
+                 if(flag2==1)
+                    ^~~~~
+../src/Parcial.c:65:20: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:24: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:45 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘hardcodear_Cliente’:
+../src/clientes.c:67:8: warning: missing braces around initializer [-Wmissing-braces]
+        {1, "AAA201", "weqqew", 1, FALSE},
+        ^
+../src/clientes.c:67:8: note: (near initialization for ‘auxlist[0]’)
+../src/clientes.c:68:8: warning: missing braces around initializer [-Wmissing-braces]
+        {2, "DFR234", "tyutyu", 2, FALSE},
+        ^
+../src/clientes.c:68:8: note: (near initialization for ‘auxlist[1]’)
+../src/clientes.c:69:8: warning: missing braces around initializer [-Wmissing-braces]
+        {3, "GFT564", "asdasd", 1, FALSE},
+        ^
+../src/clientes.c:69:8: note: (near initialization for ‘auxlist[2]’)
+../src/clientes.c:70:8: warning: missing braces around initializer [-Wmissing-braces]
+        {4, "ACD321", "bnmnmm", 3, FALSE},
+        ^
+../src/clientes.c:70:8: note: (near initialization for ‘auxlist[3]’)
+../src/clientes.c:71:8: warning: missing braces around initializer [-Wmissing-braces]
+        {5, "HTD656", "zxzxxz", 2, FALSE},
+        ^
+../src/clientes.c:71:8: note: (near initialization for ‘auxlist[4]’)
+../src/clientes.c:72:8: warning: missing braces around initializer [-Wmissing-braces]
+        {6, "QSZ435", "qqqqqq", 3, FALSE},
+        ^
+../src/clientes.c:72:8: note: (near initialization for ‘auxlist[5]’)
+../src/clientes.c:66:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+../src/clientes.c:66:5: note: (near initialization for ‘auxlist’)
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:39:15 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:39:18 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:41:19 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘hardcodear_Cliente’:
+../src/clientes.c:67:8: warning: missing braces around initializer [-Wmissing-braces]
+        {1, "AAA201", "weqqew", 1, FALSE},
+        ^
+../src/clientes.c:67:8: note: (near initialization for ‘auxlist[0]’)
+../src/clientes.c:68:8: warning: missing braces around initializer [-Wmissing-braces]
+        {2, "DFR234", "tyutyu", 2, FALSE},
+        ^
+../src/clientes.c:68:8: note: (near initialization for ‘auxlist[1]’)
+../src/clientes.c:69:8: warning: missing braces around initializer [-Wmissing-braces]
+        {3, "GFT564", "asdasd", 1, FALSE},
+        ^
+../src/clientes.c:69:8: note: (near initialization for ‘auxlist[2]’)
+../src/clientes.c:70:8: warning: missing braces around initializer [-Wmissing-braces]
+        {4, "ACD321", "bnmnmm", 3, FALSE},
+        ^
+../src/clientes.c:70:8: note: (near initialization for ‘auxlist[3]’)
+../src/clientes.c:71:8: warning: missing braces around initializer [-Wmissing-braces]
+        {5, "HTD656", "zxzxxz", 2, FALSE},
+        ^
+../src/clientes.c:71:8: note: (near initialization for ‘auxlist[4]’)
+../src/clientes.c:72:8: warning: missing braces around initializer [-Wmissing-braces]
+        {6, "QSZ435", "qqqqqq", 3, FALSE},
+        ^
+../src/clientes.c:72:8: note: (near initialization for ‘auxlist[5]’)
+../src/clientes.c:66:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+../src/clientes.c:66:5: note: (near initialization for ‘auxlist’)
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/validaciones.o   
+./src/Parcial.o: En la función `main':
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:78: referencia a `baja_Cliente' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [Parcial] Error 1
+makefile:30: fallo en las instrucciones para el objetivo 'Parcial'
+"make all" terminated with exit code 2. Build might be incomplete.
+19:42:51 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘hardcodear_Cliente’:
+../src/clientes.c:67:8: warning: missing braces around initializer [-Wmissing-braces]
+        {1, "AAA201", "weqqew", 1, FALSE},
+        ^
+../src/clientes.c:67:8: note: (near initialization for ‘auxlist[0]’)
+../src/clientes.c:68:8: warning: missing braces around initializer [-Wmissing-braces]
+        {2, "DFR234", "tyutyu", 2, FALSE},
+        ^
+../src/clientes.c:68:8: note: (near initialization for ‘auxlist[1]’)
+../src/clientes.c:69:8: warning: missing braces around initializer [-Wmissing-braces]
+        {3, "GFT564", "asdasd", 1, FALSE},
+        ^
+../src/clientes.c:69:8: note: (near initialization for ‘auxlist[2]’)
+../src/clientes.c:70:8: warning: missing braces around initializer [-Wmissing-braces]
+        {4, "ACD321", "bnmnmm", 3, FALSE},
+        ^
+../src/clientes.c:70:8: note: (near initialization for ‘auxlist[3]’)
+../src/clientes.c:71:8: warning: missing braces around initializer [-Wmissing-braces]
+        {5, "HTD656", "zxzxxz", 2, FALSE},
+        ^
+../src/clientes.c:71:8: note: (near initialization for ‘auxlist[4]’)
+../src/clientes.c:72:8: warning: missing braces around initializer [-Wmissing-braces]
+        {6, "QSZ435", "qqqqqq", 3, FALSE},
+        ^
+../src/clientes.c:72:8: note: (near initialization for ‘auxlist[5]’)
+../src/clientes.c:66:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+../src/clientes.c:66:5: note: (near initialization for ‘auxlist’)
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:42:57 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:46:11 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘hardcodear_Cliente’:
+../src/clientes.c:67:8: warning: missing braces around initializer [-Wmissing-braces]
+        {1, "AAA201", "weqqew", 1, FALSE},
+        ^
+../src/clientes.c:67:8: note: (near initialization for ‘auxlist[0]’)
+../src/clientes.c:68:8: warning: missing braces around initializer [-Wmissing-braces]
+        {2, "DFR234", "tyutyu", 2, FALSE},
+        ^
+../src/clientes.c:68:8: note: (near initialization for ‘auxlist[1]’)
+../src/clientes.c:69:8: warning: missing braces around initializer [-Wmissing-braces]
+        {3, "GFT564", "asdasd", 1, FALSE},
+        ^
+../src/clientes.c:69:8: note: (near initialization for ‘auxlist[2]’)
+../src/clientes.c:70:8: warning: missing braces around initializer [-Wmissing-braces]
+        {4, "ACD321", "bnmnmm", 3, FALSE},
+        ^
+../src/clientes.c:70:8: note: (near initialization for ‘auxlist[3]’)
+../src/clientes.c:71:8: warning: missing braces around initializer [-Wmissing-braces]
+        {5, "HTD656", "zxzxxz", 2, FALSE},
+        ^
+../src/clientes.c:71:8: note: (near initialization for ‘auxlist[4]’)
+../src/clientes.c:72:8: warning: missing braces around initializer [-Wmissing-braces]
+        {6, "QSZ435", "qqqqqq", 3, FALSE},
+        ^
+../src/clientes.c:72:8: note: (near initialization for ‘auxlist[5]’)
+../src/clientes.c:66:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+../src/clientes.c:66:5: note: (near initialization for ‘auxlist’)
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:46:14 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:01:05 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:36:5: warning: implicit declaration of function ‘inicializar_Cl’ [-Wimplicit-function-declaration]
+     inicializar_Cl(cliente, TAM_CLIENTE);
+     ^~~~~~~~~~~~~~
+../src/Parcial.c:93:42: error: ‘TAM_PEDIDOS’ undeclared (first use in this function)
+                 if(alta_Cliente(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                                          ^~~~~~~~~~~
+../src/Parcial.c:93:42: note: each undeclared identifier is reported only once for each function it appears in
+../src/Parcial.c:93:20: error: too many arguments to function ‘alta_Cliente’
+                 if(alta_Cliente(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                    ^~~~~~~~~~~~
+In file included from ../src/Parcial.c:19:0:
+../src/clientes.h:81:5: note: declared here
+ int alta_Cliente(eCliente* list, int len, int id);
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+     ^~~~~~~~~~~~
+../src/Parcial.c:102:21: error: ‘flag2’ undeclared (first use in this function)
+                     flag2=1;
+                     ^~~~~
+../src/Parcial.c:28:9: warning: unused variable ‘pedidoID’ [-Wunused-variable]
+     int pedidoID=1;
+         ^~~~~~~~
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:03:37 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:39:5: error: unknown type name ‘ePedido’
+     ePedido pedido[TAM_PEDIDOS];
+     ^~~~~~~
+../src/Parcial.c:39:20: error: ‘TAM_PEDIDOS’ undeclared (first use in this function)
+     ePedido pedido[TAM_PEDIDOS];
+                    ^~~~~~~~~~~
+../src/Parcial.c:39:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/Parcial.c:93:20: error: too many arguments to function ‘alta_Cliente’
+                 if(alta_Cliente(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                    ^~~~~~~~~~~~
+In file included from ../src/Parcial.c:19:0:
+../src/clientes.h:81:5: note: declared here
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+ int alta_Cliente(eCliente* list, int len, int id);
+     ^~~~~~~~~~~~
+../src/Parcial.c:39:13: warning: unused variable ‘pedido’ [-Wunused-variable]
+     ePedido pedido[TAM_PEDIDOS];
+             ^~~~~~
+../src/Parcial.c:32:9: warning: variable ‘flag2’ set but not used [-Wunused-but-set-variable]
+     int flag2=0;
+         ^~~~~
+../src/Parcial.c:28:9: warning: unused variable ‘pedidoID’ [-Wunused-variable]
+     int pedidoID=1;
+         ^~~~~~~~
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:09:29 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:39:5: error: unknown type name ‘ePedido’
+     ePedido pedido[TAM_PEDIDOS];
+     ^~~~~~~
+../src/Parcial.c:39:20: error: ‘TAM_PEDIDOS’ undeclared (first use in this function)
+     ePedido pedido[TAM_PEDIDOS];
+                    ^~~~~~~~~~~
+../src/Parcial.c:39:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_pedido’ [-Wimplicit-function-declaration]
+     inicializar_pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:93:20: warning: implicit declaration of function ‘alta_Pedido’ [-Wimplicit-function-declaration]
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                    ^~~~~~~~~~~
+../src/Parcial.c:39:13: warning: unused variable ‘pedido’ [-Wunused-variable]
+     ePedido pedido[TAM_PEDIDOS];
+             ^~~~~~
+../src/Parcial.c:32:9: warning: variable ‘flag2’ set but not used [-Wunused-but-set-variable]
+     int flag2=0;
+         ^~~~~
+../src/Parcial.c:28:9: warning: unused variable ‘pedidoID’ [-Wunused-variable]
+     int pedidoID=1;
+         ^~~~~~~~
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:09:55 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:39:5: error: unknown type name ‘ePedido’
+     ePedido pedido[TAM_PEDIDOS];
+     ^~~~~~~
+../src/Parcial.c:39:20: error: ‘TAM_PEDIDOS’ undeclared (first use in this function)
+     ePedido pedido[TAM_PEDIDOS];
+                    ^~~~~~~~~~~
+../src/Parcial.c:39:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_pedido’ [-Wimplicit-function-declaration]
+     inicializar_pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:93:20: warning: implicit declaration of function ‘alta_Pedido’ [-Wimplicit-function-declaration]
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                    ^~~~~~~~~~~
+../src/Parcial.c:39:13: warning: unused variable ‘pedido’ [-Wunused-variable]
+     ePedido pedido[TAM_PEDIDOS];
+             ^~~~~~
+../src/Parcial.c:32:9: warning: variable ‘flag2’ set but not used [-Wunused-but-set-variable]
+     int flag2=0;
+         ^~~~~
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:10:36 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_pedido’ [-Wimplicit-function-declaration]
+     inicializar_pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:93:32: warning: passing argument 1 of ‘alta_Pedido’ from incompatible pointer type [-Wincompatible-pointer-types]
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                                ^~~~~~~
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:67:5: note: expected ‘ePedido * {aka struct <anonymous> *}’ but argument is of type ‘eCliente * {aka struct <anonymous> *}’
+ int alta_Pedido(ePedido* list, int len, int id);
+     ^~~~~~~~~~~
+../src/Parcial.c:93:20: error: too many arguments to function ‘alta_Pedido’
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                    ^~~~~~~~~~~
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:67:5: note: declared here
+ int alta_Pedido(ePedido* list, int len, int id);
+     ^~~~~~~~~~~
+../src/Parcial.c:32:9: warning: variable ‘flag2’ set but not used [-Wunused-but-set-variable]
+     int flag2=0;
+         ^~~~~
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:11:56 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_pedido’ [-Wimplicit-function-declaration]
+     inicializar_pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:93:32: warning: passing argument 1 of ‘alta_Pedido’ from incompatible pointer type [-Wincompatible-pointer-types]
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                                ^~~~~~~
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:67:5: note: expected ‘ePedido * {aka struct <anonymous> *}’ but argument is of type ‘eCliente * {aka struct <anonymous> *}’
+ int alta_Pedido(ePedido* list, int len, int id);
+     ^~~~~~~~~~~
+../src/Parcial.c:93:20: error: too many arguments to function ‘alta_Pedido’
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                    ^~~~~~~~~~~
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:67:5: note: declared here
+ int alta_Pedido(ePedido* list, int len, int id);
+     ^~~~~~~~~~~
+../src/Parcial.c:32:9: warning: variable ‘flag2’ set but not used [-Wunused-but-set-variable]
+     int flag2=0;
+         ^~~~~
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:12:50 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:67:49: error: unknown type name ‘eCliente’
+ int alta_Pedido(ePedido* list, int len, int id, eCliente* arrayCliente, int lenCliente);
+                                                 ^~~~~~~~
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_pedido’ [-Wimplicit-function-declaration]
+     inicializar_pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:93:20: warning: implicit declaration of function ‘alta_Pedido’ [-Wimplicit-function-declaration]
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                    ^~~~~~~~~~~
+../src/Parcial.c:32:9: warning: variable ‘flag2’ set but not used [-Wunused-but-set-variable]
+     int flag2=0;
+         ^~~~~
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:13:47 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_pedido’ [-Wimplicit-function-declaration]
+     inicializar_pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:93:32: warning: passing argument 1 of ‘alta_Pedido’ from incompatible pointer type [-Wincompatible-pointer-types]
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                                ^~~~~~~
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:68:5: note: expected ‘ePedido * {aka struct <anonymous> *}’ but argument is of type ‘eCliente * {aka struct <anonymous> *}’
+ int alta_Pedido(ePedido* list, int len, int id, eCliente* arrayCliente, int lenCliente);
+     ^~~~~~~~~~~
+../src/Parcial.c:32:9: warning: variable ‘flag2’ set but not used [-Wunused-but-set-variable]
+     int flag2=0;
+         ^~~~~
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘hardcodear_Cliente’:
+../src/clientes.c:67:8: warning: missing braces around initializer [-Wmissing-braces]
+        {1, "AAA201", "weqqew", 1, FALSE},
+        ^
+../src/clientes.c:67:8: note: (near initialization for ‘auxlist[0]’)
+../src/clientes.c:68:8: warning: missing braces around initializer [-Wmissing-braces]
+        {2, "DFR234", "tyutyu", 2, FALSE},
+        ^
+../src/clientes.c:68:8: note: (near initialization for ‘auxlist[1]’)
+../src/clientes.c:69:8: warning: missing braces around initializer [-Wmissing-braces]
+        {3, "GFT564", "asdasd", 1, FALSE},
+        ^
+../src/clientes.c:69:8: note: (near initialization for ‘auxlist[2]’)
+../src/clientes.c:70:8: warning: missing braces around initializer [-Wmissing-braces]
+        {4, "ACD321", "bnmnmm", 3, FALSE},
+        ^
+../src/clientes.c:70:8: note: (near initialization for ‘auxlist[3]’)
+../src/clientes.c:71:8: warning: missing braces around initializer [-Wmissing-braces]
+        {5, "HTD656", "zxzxxz", 2, FALSE},
+        ^
+../src/clientes.c:71:8: note: (near initialization for ‘auxlist[4]’)
+../src/clientes.c:72:8: warning: missing braces around initializer [-Wmissing-braces]
+        {6, "QSZ435", "qqqqqq", 3, FALSE},
+        ^
+../src/clientes.c:72:8: note: (near initialization for ‘auxlist[5]’)
+../src/clientes.c:66:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+../src/clientes.c:66:5: note: (near initialization for ‘auxlist’)
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:37:20: note: (near initialization for ‘auxlist[0].id’)
+../src/pedidos.c:37:39: warning: excess elements in struct initializer
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                       ^
+../src/pedidos.c:37:39: note: (near initialization for ‘auxlist[0]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[0]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/pedidos.o'
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:38:21: note: (near initialization for ‘auxlist[1].id’)
+../src/pedidos.c:38:42: warning: excess elements in struct initializer
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                          ^
+../src/pedidos.c:38:42: note: (near initialization for ‘auxlist[1]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[1]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:39:21: note: (near initialization for ‘auxlist[2].id’)
+../src/pedidos.c:39:36: warning: excess elements in struct initializer
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                    ^
+../src/pedidos.c:39:36: note: (near initialization for ‘auxlist[2]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[2]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:40:21: note: (near initialization for ‘auxlist[3].id’)
+../src/pedidos.c:40:38: warning: excess elements in struct initializer
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                      ^
+../src/pedidos.c:40:38: note: (near initialization for ‘auxlist[3]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[3]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:41:20: note: (near initialization for ‘auxlist[4].id’)
+../src/pedidos.c:41:35: warning: excess elements in struct initializer
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                   ^
+../src/pedidos.c:41:35: note: (near initialization for ‘auxlist[4]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[4]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c:42:21: note: (near initialization for ‘auxlist[5].id’)
+../src/pedidos.c:42:39: warning: excess elements in struct initializer
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                       ^
+../src/pedidos.c:42:39: note: (near initialization for ‘auxlist[5]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[5]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.c: In function ‘alta_Pedido’:
+../src/pedidos.c:79:38: warning: passing argument 1 of ‘buscarIndexVacio_Cliente’ from incompatible pointer type [-Wincompatible-pointer-types]
+     index = buscarIndexVacio_Cliente(list, len);
+                                      ^~~~
+In file included from ../src/pedidos.c:15:0:
+../src/clientes.h:69:5: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘ePedido * {aka struct <anonymous> *}’
+ int buscarIndexVacio_Cliente(eCliente* list, int len);
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos.c:82:29: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘nombre’
+         if(getString(auxList.nombre, TAM_NOMBRE , 3, "\nEscriba el nombre: ", "Error, intente nuevamente\n") == 0
+                             ^
+../src/pedidos.c:83:29: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘apellido’
+         && getString(auxList.apellido, TAM_APELLIDO , 3, "\nEscriba el apellido: ", "Error, intente nuevamente\n") == 0
+                             ^
+../src/pedidos.c:83:40: error: ‘TAM_APELLIDO’ undeclared (first use in this function)
+         && getString(auxList.apellido, TAM_APELLIDO , 3, "\nEscriba el apellido: ", "Error, intente nuevamente\n") == 0
+                                        ^~~~~~~~~~~~
+../src/pedidos.c:83:40: note: each undeclared identifier is reported only once for each function it appears in
+../src/pedidos.c:84:30: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘edad’
+         && getNumInt(&auxList.edad, 3, 0, 150, "\nIngrese la edad: ", "Error\n") == 0
+                              ^
+../src/pedidos.c:85:30: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘idInstrumento’
+         && getNumInt(&auxList.idInstrumento, 3, 0, 4, "\n1-Cuerdas\n2-Viento-Madera\n3-Viento-Metal\n4-Percusion\n\nIngrese el tipo de instrumento: ", "Error\n") == 0)
+                              ^
+../src/pedidos.c:89:60: error: ‘TAM_ORQUESTA’ undeclared (first use in this function)
+             if(buscar_ClienteById(arrayCliente, idCliente, TAM_ORQUESTA)!=-1)
+                                                            ^~~~~~~~~~~~
+../src/pedidos.c: In function ‘print_Pedido’:
+../src/pedidos.c:132:45: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘idInstrumento’
+         cargarDescripcionCliente(list[index].idInstrumento, descripcion);
+                                             ^
+../src/pedidos.c:133:72: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘nombre’
+         printf("%d\t%s\t%s\t\t\t%s\t\t%d\n",list[index].id, list[index].nombre, list[index].apellido, descripcion, index);
+                                                                        ^
+../src/pedidos.c:133:92: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘apellido’
+         printf("%d\t%s\t%s\t\t\t%s\t\t%d\n",list[index].id, list[index].nombre, list[index].apellido, descripcion, index);
+                                                                                            ^
+../src/pedidos.c: In function ‘listar_Pedido’:
+../src/pedidos.c:152:27: warning: passing argument 1 of ‘print_Cliente’ from incompatible pointer type [-Wincompatible-pointer-types]
+             print_Cliente(list,i,len);
+                           ^~~~
+In file included from ../src/pedidos.c:15:0:
+../src/clientes.h:131:5: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘ePedido * {aka struct <anonymous> *}’
+ int print_Cliente(eCliente* list, int index, int len);
+     ^~~~~~~~~~~~~
+../src/pedidos.c: In function ‘cargarDescripcionPedido’:
+../src/pedidos.c:159:12: error: ‘idCliente’ undeclared (first use in this function)
+     switch(idCliente)
+            ^~~~~~~~~
+make: *** [src/pedidos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:14:05 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:37:20: note: (near initialization for ‘auxlist[0].id’)
+../src/pedidos.c:37:39: warning: excess elements in struct initializer
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                       ^
+../src/pedidos.c:37:39: note: (near initialization for ‘auxlist[0]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[0]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/pedidos.o'
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:38:21: note: (near initialization for ‘auxlist[1].id’)
+../src/pedidos.c:38:42: warning: excess elements in struct initializer
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                          ^
+../src/pedidos.c:38:42: note: (near initialization for ‘auxlist[1]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[1]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:39:21: note: (near initialization for ‘auxlist[2].id’)
+../src/pedidos.c:39:36: warning: excess elements in struct initializer
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                    ^
+../src/pedidos.c:39:36: note: (near initialization for ‘auxlist[2]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[2]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:40:21: note: (near initialization for ‘auxlist[3].id’)
+../src/pedidos.c:40:38: warning: excess elements in struct initializer
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                      ^
+../src/pedidos.c:40:38: note: (near initialization for ‘auxlist[3]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[3]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:41:20: note: (near initialization for ‘auxlist[4].id’)
+../src/pedidos.c:41:35: warning: excess elements in struct initializer
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                   ^
+../src/pedidos.c:41:35: note: (near initialization for ‘auxlist[4]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[4]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c:42:21: note: (near initialization for ‘auxlist[5].id’)
+../src/pedidos.c:42:39: warning: excess elements in struct initializer
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                       ^
+../src/pedidos.c:42:39: note: (near initialization for ‘auxlist[5]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:15:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.h:15:15: note: (near initialization for ‘auxlist[5]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.c: In function ‘alta_Pedido’:
+../src/pedidos.c:79:38: warning: passing argument 1 of ‘buscarIndexVacio_Cliente’ from incompatible pointer type [-Wincompatible-pointer-types]
+     index = buscarIndexVacio_Cliente(list, len);
+                                      ^~~~
+In file included from ../src/pedidos.c:15:0:
+../src/clientes.h:69:5: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘ePedido * {aka struct <anonymous> *}’
+ int buscarIndexVacio_Cliente(eCliente* list, int len);
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos.c:82:29: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘nombre’
+         if(getString(auxList.nombre, TAM_NOMBRE , 3, "\nEscriba el nombre: ", "Error, intente nuevamente\n") == 0
+                             ^
+../src/pedidos.c:83:29: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘apellido’
+         && getString(auxList.apellido, TAM_APELLIDO , 3, "\nEscriba el apellido: ", "Error, intente nuevamente\n") == 0
+                             ^
+../src/pedidos.c:83:40: error: ‘TAM_APELLIDO’ undeclared (first use in this function)
+         && getString(auxList.apellido, TAM_APELLIDO , 3, "\nEscriba el apellido: ", "Error, intente nuevamente\n") == 0
+                                        ^~~~~~~~~~~~
+../src/pedidos.c:83:40: note: each undeclared identifier is reported only once for each function it appears in
+../src/pedidos.c:84:30: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘edad’
+         && getNumInt(&auxList.edad, 3, 0, 150, "\nIngrese la edad: ", "Error\n") == 0
+                              ^
+../src/pedidos.c:85:30: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘idInstrumento’
+         && getNumInt(&auxList.idInstrumento, 3, 0, 4, "\n1-Cuerdas\n2-Viento-Madera\n3-Viento-Metal\n4-Percusion\n\nIngrese el tipo de instrumento: ", "Error\n") == 0)
+                              ^
+../src/pedidos.c:89:60: error: ‘TAM_ORQUESTA’ undeclared (first use in this function)
+             if(buscar_ClienteById(arrayCliente, idCliente, TAM_ORQUESTA)!=-1)
+                                                            ^~~~~~~~~~~~
+../src/pedidos.c: In function ‘print_Pedido’:
+../src/pedidos.c:132:45: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘idInstrumento’
+         cargarDescripcionCliente(list[index].idInstrumento, descripcion);
+                                             ^
+../src/pedidos.c:133:72: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘nombre’
+         printf("%d\t%s\t%s\t\t\t%s\t\t%d\n",list[index].id, list[index].nombre, list[index].apellido, descripcion, index);
+                                                                        ^
+../src/pedidos.c:133:92: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘apellido’
+         printf("%d\t%s\t%s\t\t\t%s\t\t%d\n",list[index].id, list[index].nombre, list[index].apellido, descripcion, index);
+                                                                                            ^
+../src/pedidos.c: In function ‘listar_Pedido’:
+../src/pedidos.c:152:27: warning: passing argument 1 of ‘print_Cliente’ from incompatible pointer type [-Wincompatible-pointer-types]
+             print_Cliente(list,i,len);
+                           ^~~~
+In file included from ../src/pedidos.c:15:0:
+../src/clientes.h:131:5: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘ePedido * {aka struct <anonymous> *}’
+ int print_Cliente(eCliente* list, int index, int len);
+     ^~~~~~~~~~~~~
+make: *** [src/pedidos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:23:07 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_pedido’ [-Wimplicit-function-declaration]
+     inicializar_pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:93:32: warning: passing argument 1 of ‘alta_Pedido’ from incompatible pointer type [-Wincompatible-pointer-types]
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                                ^~~~~~~
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:71:5: note: expected ‘ePedido * {aka struct <anonymous> *}’ but argument is of type ‘eCliente * {aka struct <anonymous> *}’
+ int alta_Pedido(ePedido* list, int len, int id, eCliente* arrayCliente, int lenCliente);
+     ^~~~~~~~~~~
+../src/Parcial.c:32:9: warning: variable ‘flag2’ set but not used [-Wunused-but-set-variable]
+     int flag2=0;
+         ^~~~~
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:37:20: note: (near initialization for ‘auxlist[0].id’)
+../src/pedidos.c:37:39: warning: excess elements in struct initializer
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                       ^
+../src/pedidos.c:37:39: note: (near initialization for ‘auxlist[0]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[0]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:38:21: note: (near initialization for ‘auxlist[1].id’)
+../src/pedidos.c:38:42: warning: excess elements in struct initializer
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/pedidos.o'
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                          ^
+../src/pedidos.c:38:42: note: (near initialization for ‘auxlist[1]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[1]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:39:21: note: (near initialization for ‘auxlist[2].id’)
+../src/pedidos.c:39:36: warning: excess elements in struct initializer
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                    ^
+../src/pedidos.c:39:36: note: (near initialization for ‘auxlist[2]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[2]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:40:21: note: (near initialization for ‘auxlist[3].id’)
+../src/pedidos.c:40:38: warning: excess elements in struct initializer
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                      ^
+../src/pedidos.c:40:38: note: (near initialization for ‘auxlist[3]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[3]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:41:20: note: (near initialization for ‘auxlist[4].id’)
+../src/pedidos.c:41:35: warning: excess elements in struct initializer
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                   ^
+../src/pedidos.c:41:35: note: (near initialization for ‘auxlist[4]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[4]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c:42:21: note: (near initialization for ‘auxlist[5].id’)
+../src/pedidos.c:42:39: warning: excess elements in struct initializer
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                       ^
+../src/pedidos.c:42:39: note: (near initialization for ‘auxlist[5]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[5]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.c: In function ‘alta_Pedido’:
+../src/pedidos.c:79:38: warning: passing argument 1 of ‘buscarIndexVacio_Cliente’ from incompatible pointer type [-Wincompatible-pointer-types]
+     index = buscarIndexVacio_Cliente(list, len);
+                                      ^~~~
+In file included from ../src/pedidos.c:15:0:
+../src/clientes.h:69:5: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘ePedido * {aka struct <anonymous> *}’
+ int buscarIndexVacio_Cliente(eCliente* list, int len);
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos.c: In function ‘print_Pedido’:
+../src/pedidos.c:128:45: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘idInstrumento’
+         cargarDescripcionCliente(list[index].idInstrumento, descripcion);
+                                             ^
+../src/pedidos.c:129:72: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘nombre’
+         printf("%d\t%s\t%s\t\t\t%s\t\t%d\n",list[index].id, list[index].nombre, list[index].apellido, descripcion, index);
+                                                                        ^
+../src/pedidos.c:129:92: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘apellido’
+         printf("%d\t%s\t%s\t\t\t%s\t\t%d\n",list[index].id, list[index].nombre, list[index].apellido, descripcion, index);
+                                                                                            ^
+../src/pedidos.c: In function ‘listar_Pedido’:
+../src/pedidos.c:148:27: warning: passing argument 1 of ‘print_Cliente’ from incompatible pointer type [-Wincompatible-pointer-types]
+             print_Cliente(list,i,len);
+                           ^~~~
+In file included from ../src/pedidos.c:15:0:
+../src/clientes.h:131:5: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘ePedido * {aka struct <anonymous> *}’
+ int print_Cliente(eCliente* list, int index, int len);
+     ^~~~~~~~~~~~~
+make: *** [src/pedidos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:47:08 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_pedido’ [-Wimplicit-function-declaration]
+     inicializar_pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:93:32: warning: passing argument 1 of ‘alta_Pedido’ from incompatible pointer type [-Wincompatible-pointer-types]
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                                ^~~~~~~
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:71:5: note: expected ‘ePedido * {aka struct <anonymous> *}’ but argument is of type ‘eCliente * {aka struct <anonymous> *}’
+ int alta_Pedido(ePedido* list, int len, int id, eCliente* arrayCliente, int lenCliente);
+     ^~~~~~~~~~~
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:37:20: note: (near initialization for ‘auxlist[0].id’)
+../src/pedidos.c:37:39: warning: excess elements in struct initializer
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                       ^
+../src/pedidos.c:37:39: note: (near initialization for ‘auxlist[0]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[0]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:38:21: note: (near initialization for ‘auxlist[1].id’)
+../src/pedidos.c:38:42: warning: excess elements in struct initializer
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                          ^
+../src/pedidos.c:38:42: note: (near initialization for ‘auxlist[1]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[1]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:39:21: note: (near initialization for ‘auxlist[2].id’)
+../src/pedidos.c:39:36: warning: excess elements in struct initializer
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                    ^
+../src/pedidos.c:39:36: note: (near initialization for ‘auxlist[2]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/pedidos.o'
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[2]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:40:21: note: (near initialization for ‘auxlist[3].id’)
+../src/pedidos.c:40:38: warning: excess elements in struct initializer
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                      ^
+../src/pedidos.c:40:38: note: (near initialization for ‘auxlist[3]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[3]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:41:20: note: (near initialization for ‘auxlist[4].id’)
+../src/pedidos.c:41:35: warning: excess elements in struct initializer
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                   ^
+../src/pedidos.c:41:35: note: (near initialization for ‘auxlist[4]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[4]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c:42:21: note: (near initialization for ‘auxlist[5].id’)
+../src/pedidos.c:42:39: warning: excess elements in struct initializer
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                       ^
+../src/pedidos.c:42:39: note: (near initialization for ‘auxlist[5]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[5]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.c: In function ‘alta_Pedido’:
+../src/pedidos.c:79:38: warning: passing argument 1 of ‘buscarIndexVacio_Cliente’ from incompatible pointer type [-Wincompatible-pointer-types]
+     index = buscarIndexVacio_Cliente(list, len);
+                                      ^~~~
+In file included from ../src/pedidos.c:15:0:
+../src/clientes.h:69:5: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘ePedido * {aka struct <anonymous> *}’
+ int buscarIndexVacio_Cliente(eCliente* list, int len);
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos.c: At top level:
+../src/pedidos.c:122:5: error: conflicting types for ‘print_Pedido’
+ int print_Pedido(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:102:5: note: previous declaration of ‘print_Pedido’ was here
+ int print_Pedido(ePedido* list, int index, int len);
+     ^~~~~~~~~~~~
+../src/pedidos.c: In function ‘print_Pedido’:
+../src/pedidos.c:131:23: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘char *’ [-Wformat=]
+      printf("%d\t%s\t%d\t\t%d\n",list[index].id, arrayCliente[indexCliente].cuit, arrayCliente[indexCliente].direccion, list[index].kilos);
+                       ^
+../src/pedidos.c:126:10: warning: unused variable ‘descripcion’ [-Wunused-variable]
+     char descripcion[20];
+          ^~~~~~~~~~~
+../src/pedidos.c: In function ‘listar_Pedido’:
+../src/pedidos.c:150:13: error: too few arguments to function ‘print_Pedido’
+             print_Pedido(list,i,len);
+             ^~~~~~~~~~~~
+../src/pedidos.c:122:5: note: declared here
+ int print_Pedido(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~
+make: *** [src/pedidos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:05 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:37:20: note: (near initialization for ‘auxlist[0].id’)
+../src/pedidos.c:37:39: warning: excess elements in struct initializer
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                       ^
+../src/pedidos.c:37:39: note: (near initialization for ‘auxlist[0]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/pedidos.o'
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[0]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:38:21: note: (near initialization for ‘auxlist[1].id’)
+../src/pedidos.c:38:42: warning: excess elements in struct initializer
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                          ^
+../src/pedidos.c:38:42: note: (near initialization for ‘auxlist[1]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[1]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:39:21: note: (near initialization for ‘auxlist[2].id’)
+../src/pedidos.c:39:36: warning: excess elements in struct initializer
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                    ^
+../src/pedidos.c:39:36: note: (near initialization for ‘auxlist[2]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[2]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:40:21: note: (near initialization for ‘auxlist[3].id’)
+../src/pedidos.c:40:38: warning: excess elements in struct initializer
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                      ^
+../src/pedidos.c:40:38: note: (near initialization for ‘auxlist[3]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[3]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:41:20: note: (near initialization for ‘auxlist[4].id’)
+../src/pedidos.c:41:35: warning: excess elements in struct initializer
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                   ^
+../src/pedidos.c:41:35: note: (near initialization for ‘auxlist[4]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[4]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c:42:21: note: (near initialization for ‘auxlist[5].id’)
+../src/pedidos.c:42:39: warning: excess elements in struct initializer
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                       ^
+../src/pedidos.c:42:39: note: (near initialization for ‘auxlist[5]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[5]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.c: In function ‘alta_Pedido’:
+../src/pedidos.c:79:38: warning: passing argument 1 of ‘buscarIndexVacio_Cliente’ from incompatible pointer type [-Wincompatible-pointer-types]
+     index = buscarIndexVacio_Cliente(list, len);
+                                      ^~~~
+In file included from ../src/pedidos.c:15:0:
+../src/clientes.h:69:5: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘ePedido * {aka struct <anonymous> *}’
+ int buscarIndexVacio_Cliente(eCliente* list, int len);
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos.c: At top level:
+../src/pedidos.c:122:5: error: conflicting types for ‘print_Pedido’
+ int print_Pedido(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:102:5: note: previous declaration of ‘print_Pedido’ was here
+ int print_Pedido(ePedido* list, int index, int len);
+     ^~~~~~~~~~~~
+../src/pedidos.c: In function ‘print_Pedido’:
+../src/pedidos.c:131:23: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘char *’ [-Wformat=]
+      printf("%d\t%s\t%d\t\t%d\n",list[index].id, arrayCliente[indexCliente].cuit, arrayCliente[indexCliente].direccion, list[index].kilos);
+                       ^
+../src/pedidos.c:126:10: warning: unused variable ‘descripcion’ [-Wunused-variable]
+     char descripcion[20];
+          ^~~~~~~~~~~
+../src/pedidos.c: At top level:
+../src/pedidos.c:141:6: error: conflicting types for ‘listar_Pedido’
+ void listar_Pedido(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:112:6: note: previous declaration of ‘listar_Pedido’ was here
+ void listar_Pedido(ePedido* list, int len);
+      ^~~~~~~~~~~~~
+make: *** [src/pedidos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:49 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_pedido’ [-Wimplicit-function-declaration]
+     inicializar_pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:93:32: warning: passing argument 1 of ‘alta_Pedido’ from incompatible pointer type [-Wincompatible-pointer-types]
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                                ^~~~~~~
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:71:5: note: expected ‘ePedido * {aka struct <anonymous> *}’ but argument is of type ‘eCliente * {aka struct <anonymous> *}’
+ int alta_Pedido(ePedido* list, int len, int id, eCliente* arrayCliente, int lenCliente);
+     ^~~~~~~~~~~
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:37:20: note: (near initialization for ‘auxlist[0].id’)
+../src/pedidos.c:37:39: warning: excess elements in struct initializer
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                       ^
+../src/pedidos.c:37:39: note: (near initialization for ‘auxlist[0]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[0]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:38:21: note: (near initialization for ‘auxlist[1].id’)
+../src/pedidos.c:38:42: warning: excess elements in struct initializer
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                          ^
+../src/pedidos.c:38:42: note: (near initialization for ‘auxlist[1]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[1]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:39:21: note: (near initialization for ‘auxlist[2].id’)
+../src/pedidos.c:39:36: warning: excess elements in struct initializer
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                    ^
+../src/pedidos.c:39:36: note: (near initialization for ‘auxlist[2]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[2]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:40:21: note: (near initialization for ‘auxlist[3].id’)
+../src/pedidos.c:40:38: warning: excess elements in struct initializer
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                      ^
+../src/pedidos.c:40:38: note: (near initialization for ‘auxlist[3]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[3]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:41:20: note: (near initialization for ‘auxlist[4].id’)
+../src/pedidos.c:41:35: warning: excess elements in struct initializer
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                   ^
+../src/pedidos.c:41:35: note: (near initialization for ‘auxlist[4]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[4]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c:42:21: note: (near initialization for ‘auxlist[5].id’)
+../src/pedidos.c:42:39: warning: excess elements in struct initializer
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                       ^
+../src/pedidos.c:42:39: note: (near initialization for ‘auxlist[5]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[5]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.c: In function ‘alta_Pedido’:
+../src/pedidos.c:79:38: warning: passing argument 1 of ‘buscarIndexVacio_Cliente’ from incompatible pointer type [-Wincompatible-pointer-types]
+     index = buscarIndexVacio_Cliente(list, len);
+                                      ^~~~
+In file included from ../src/pedidos.c:15:0:
+../src/clientes.h:69:5: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘ePedido * {aka struct <anonymous> *}’
+ int buscarIndexVacio_Cliente(eCliente* list, int len);
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos.c: In function ‘print_Pedido’:
+../src/pedidos.c:130:23: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘char *’ [-Wformat=]
+      printf("%d\t%s\t%d\t\t%d\n",list[index].id, arrayCliente[indexCliente].cuit, arrayCliente[indexCliente].direccion, list[index].kilos);
+                       ^
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+./src/Parcial.o: En la función `main':
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:40: referencia a `inicializar_pedido' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [Parcial] Error 1
+makefile:30: fallo en las instrucciones para el objetivo 'Parcial'
+"make all" terminated with exit code 2. Build might be incomplete.
+20:49:24 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:93:32: warning: passing argument 1 of ‘alta_Pedido’ from incompatible pointer type [-Wincompatible-pointer-types]
+                 if(alta_Pedido(cliente, TAM_PEDIDOS, clienteID, cliente, TAM_CLIENTE)==-1)
+                                ^~~~~~~
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:71:5: note: expected ‘ePedido * {aka struct <anonymous> *}’ but argument is of type ‘eCliente * {aka struct <anonymous> *}’
+ int alta_Pedido(ePedido* list, int len, int id, eCliente* arrayCliente, int lenCliente);
+     ^~~~~~~~~~~
+Finished building: ../src/Parcial.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:49:54 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:50:43 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:50:51 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:51:15 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘hardcodear_Cliente’:
+../src/clientes.c:67:8: warning: missing braces around initializer [-Wmissing-braces]
+        {1, "AAA201", "weqqew", 1, FALSE},
+        ^
+../src/clientes.c:67:8: note: (near initialization for ‘auxlist[0]’)
+../src/clientes.c:68:8: warning: missing braces around initializer [-Wmissing-braces]
+        {2, "DFR234", "tyutyu", 2, FALSE},
+        ^
+../src/clientes.c:68:8: note: (near initialization for ‘auxlist[1]’)
+../src/clientes.c:69:8: warning: missing braces around initializer [-Wmissing-braces]
+        {3, "GFT564", "asdasd", 1, FALSE},
+        ^
+../src/clientes.c:69:8: note: (near initialization for ‘auxlist[2]’)
+../src/clientes.c:70:8: warning: missing braces around initializer [-Wmissing-braces]
+        {4, "ACD321", "bnmnmm", 3, FALSE},
+        ^
+../src/clientes.c:70:8: note: (near initialization for ‘auxlist[3]’)
+../src/clientes.c:71:8: warning: missing braces around initializer [-Wmissing-braces]
+        {5, "HTD656", "zxzxxz", 2, FALSE},
+        ^
+../src/clientes.c:71:8: note: (near initialization for ‘auxlist[4]’)
+../src/clientes.c:72:8: warning: missing braces around initializer [-Wmissing-braces]
+        {6, "QSZ435", "qqqqqq", 3, FALSE},
+        ^
+../src/clientes.c:72:8: note: (near initialization for ‘auxlist[5]’)
+../src/clientes.c:66:5: warning: missing braces around initializer [-Wmissing-braces]
+     {
+     ^
+../src/clientes.c:66:5: note: (near initialization for ‘auxlist’)
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:51:34 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:54:02 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:37:20: note: (near initialization for ‘auxlist[0].id’)
+../src/pedidos.c:37:39: warning: excess elements in struct initializer
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                       ^
+../src/pedidos.c:37:39: note: (near initialization for ‘auxlist[0]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[0]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:38:21: note: (near initialization for ‘auxlist[1].id’)
+../src/pedidos.c:38:42: warning: excess elements in struct initializer
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                          ^
+../src/pedidos.c:38:42: note: (near initialization for ‘auxlist[1]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[1]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:39:21: note: (near initialization for ‘auxlist[2].id’)
+../src/pedidos.c:39:36: warning: excess elements in struct initializer
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                    ^
+../src/pedidos.c:39:36: note: (near initialization for ‘auxlist[2]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[2]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:40:21: note: (near initialization for ‘auxlist[3].id’)
+../src/pedidos.c:40:38: warning: excess elements in struct initializer
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                      ^
+../src/pedidos.c:40:38: note: (near initialization for ‘auxlist[3]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[3]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:41:20: note: (near initialization for ‘auxlist[4].id’)
+../src/pedidos.c:41:35: warning: excess elements in struct initializer
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                   ^
+../src/pedidos.c:41:35: note: (near initialization for ‘auxlist[4]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[4]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c:42:21: note: (near initialization for ‘auxlist[5].id’)
+../src/pedidos.c:42:39: warning: excess elements in struct initializer
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                       ^
+../src/pedidos.c:42:39: note: (near initialization for ‘auxlist[5]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[5]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.c: In function ‘alta_Pedido’:
+../src/pedidos.c:79:38: warning: passing argument 1 of ‘buscarIndexVacio_Cliente’ from incompatible pointer type [-Wincompatible-pointer-types]
+     index = buscarIndexVacio_Cliente(list, len);
+                                      ^~~~
+In file included from ../src/pedidos.c:15:0:
+../src/clientes.h:69:5: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘ePedido * {aka struct <anonymous> *}’
+ int buscarIndexVacio_Cliente(eCliente* list, int len);
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:54:33 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:37:20: note: (near initialization for ‘auxlist[0].id’)
+../src/pedidos.c:37:39: warning: excess elements in struct initializer
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                       ^
+../src/pedidos.c:37:39: note: (near initialization for ‘auxlist[0]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[0]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:37:42: note: in expansion of macro ‘FALSE’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                                          ^~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:38:21: note: (near initialization for ‘auxlist[1].id’)
+../src/pedidos.c:38:42: warning: excess elements in struct initializer
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                          ^
+../src/pedidos.c:38:42: note: (near initialization for ‘auxlist[1]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[1]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:38:45: note: in expansion of macro ‘FALSE’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                                             ^~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:39:21: note: (near initialization for ‘auxlist[2].id’)
+../src/pedidos.c:39:36: warning: excess elements in struct initializer
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                    ^
+../src/pedidos.c:39:36: note: (near initialization for ‘auxlist[2]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[2]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:39:39: note: in expansion of macro ‘FALSE’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                                       ^~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:40:21: note: (near initialization for ‘auxlist[3].id’)
+../src/pedidos.c:40:38: warning: excess elements in struct initializer
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                      ^
+../src/pedidos.c:40:38: note: (near initialization for ‘auxlist[3]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[3]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:40:41: note: in expansion of macro ‘FALSE’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                                         ^~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:41:20: note: (near initialization for ‘auxlist[4].id’)
+../src/pedidos.c:41:35: warning: excess elements in struct initializer
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                   ^
+../src/pedidos.c:41:35: note: (near initialization for ‘auxlist[4]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[4]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:41:38: note: in expansion of macro ‘FALSE’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                                      ^~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c:42:21: note: (near initialization for ‘auxlist[5].id’)
+../src/pedidos.c:42:39: warning: excess elements in struct initializer
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                       ^
+../src/pedidos.c:42:39: note: (near initialization for ‘auxlist[5]’)
+In file included from ../src/pedidos.c:16:0:
+../src/pedidos.h:18:15: warning: excess elements in struct initializer
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+../src/pedidos.h:18:15: note: (near initialization for ‘auxlist[5]’)
+ #define FALSE 0
+               ^
+../src/pedidos.c:42:42: note: in expansion of macro ‘FALSE’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                                          ^~~~~
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:57:52 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:02:37 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:16:17 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:16:20 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:16:21 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:16:22 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:16:22 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:16:23 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:30:14 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:130:21: warning: implicit declaration of function ‘listar_Pedido’ [-Wimplicit-function-declaration]
+                     listar_Pedido(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/pedidos.o'
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c: In function ‘listar_PedidoPendiente’:
+../src/pedidos.c:149:13: warning: implicit declaration of function ‘print_Pedido’ [-Wimplicit-function-declaration]
+             print_Pedido(list,i,len, arrayCliente, lenCliente);
+             ^~~~~~~~~~~~
+../src/pedidos.c: In function ‘procesarResiduos’:
+../src/pedidos.c:194:22: error: ‘ePedido {aka struct <anonymous>}’ has no member named ‘retorno’
+     list[indexPedido].
+                      ^
+../src/pedidos.c:194:5: warning: statement with no effect [-Wunused-value]
+     list[indexPedido].
+     ^~~~
+../src/pedidos.c:157:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+make: *** [src/pedidos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:32:00 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/pedidos.o'
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c: In function ‘listar_PedidoPendiente’:
+../src/pedidos.c:149:13: warning: implicit declaration of function ‘print_Pedido’ [-Wimplicit-function-declaration]
+             print_Pedido(list,i,len, arrayCliente, lenCliente);
+             ^~~~~~~~~~~~
+../src/pedidos.c: In function ‘procesarResiduos’:
+../src/pedidos.c:157:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+make: *** [src/pedidos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:32:25 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/pedidos.o'
+                     ^~~~~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c: In function ‘procesarResiduos’:
+../src/pedidos.c:157:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+make: *** [src/pedidos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:32:48 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:130:21: warning: implicit declaration of function ‘listar_Pedido’ [-Wimplicit-function-declaration]
+                     listar_Pedido(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘hardcodear_Pedido’:
+../src/pedidos.c:37:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+            ^~~~~~
+../src/pedidos.c:37:12: note: (near initialization for ‘auxlist[0].kilos’)
+../src/pedidos.c:37:20: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
+                    ^~~~~~~~~~
+../src/pedidos.c:38:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:38:12: note: (near initialization for ‘auxlist[1].kilos’)
+../src/pedidos.c:38:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
+                     ^~~~~~~~~~~~
+../src/pedidos.c:39:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+            ^~~~~~~
+../src/pedidos.c:39:12: note: (near initialization for ‘auxlist[2].kilos’)
+../src/pedidos.c:39:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {3, "Mario", "Bros", 50, 3, 3, FALSE},
+                     ^~~~~~
+../src/pedidos.c:40:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+            ^~~~~~~
+../src/pedidos.c:40:12: note: (near initialization for ‘auxlist[3].kilos’)
+../src/pedidos.c:40:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
+                     ^~~~~~~~
+../src/pedidos.c:41:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+            ^~~~~~
+../src/pedidos.c:41:12: note: (near initialization for ‘auxlist[4].kilos’)
+../src/pedidos.c:41:20: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
+                    ^~~~~~
+../src/pedidos.c:42:12: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+            ^~~~~~~
+../src/pedidos.c:42:12: note: (near initialization for ‘auxlist[5].kilos’)
+../src/pedidos.c:42:21: error: incompatible types when initializing type ‘float’ using type ‘char *’
+        {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+                     ^~~~~~~~~
+../src/pedidos.c: In function ‘procesarResiduos’:
+../src/pedidos.c:157:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/pedidos.o'
+make: *** [src/pedidos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:33:08 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c: In function ‘procesarResiduos’:
+../src/pedidos.c:157:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+./src/Parcial.o: En la función `main':
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:130: referencia a `listar_Pedido' sin definir
+makefile:30: fallo en las instrucciones para el objetivo 'Parcial'
+collect2: error: ld returned 1 exit status
+make: *** [Parcial] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:33:20 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+./src/Parcial.o: En la función `main':
+/home/alumno/B/Parcial/Debug/../src/Parcial.c:130: referencia a `listar_Pedido' sin definir
+makefile:30: fallo en las instrucciones para el objetivo 'Parcial'
+collect2: error: ld returned 1 exit status
+make: *** [Parcial] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:33:34 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:33:37 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:35:52 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:40:57 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+../src/pedidos.c:204:5: error: redefinition of ‘print_PedidoPendiente’
+ int print_PedidoPendiente(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/pedidos.c:122:5: note: previous definition of ‘print_PedidoPendiente’ was here
+ int print_PedidoPendiente(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/pedidos.c:222:6: error: redefinition of ‘listar_PedidoPendiente’
+ void listar_PedidoPendiente(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~
+../src/pedidos.c:140:6: note: previous definition of ‘listar_PedidoPendiente’ was here
+ void listar_PedidoPendiente(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:27: fallo en las instrucciones para el objetivo 'src/pedidos.o'
+make: *** [src/pedidos.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:42:04 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 

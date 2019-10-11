@@ -1,0 +1,99 @@
+/*
+ * clientes.c
+ *
+ *  Created on: 10 oct. 2019
+ *      Author: alumno
+ */
+
+
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#include "validaciones.h"
+#include "clientes.h"
+
+
+
+int menuConOpcion(int reintentos, int numOpcMin, int numOpcMax)
+{
+    int opcion;
+    int auxOpcion;
+
+    printf("\n -*- MENU DE OPCIONES -*-\n\n");
+    printf(" 1. ALTA CLIENTE\n");
+    printf(" 2. ELIMINAR CLIENTE\n");
+    printf(" 3. IMPRIMIR CLIENTES\n");
+    printf(" 4. AGREGAR MUSICO\n");
+    printf(" 5. MODIFICAR MUSICO\n");
+    printf(" 6. ELIMINAR MUSICO\n");
+    printf(" 7. IMPRIMIR MUSICOS\n");
+    printf(" 8. LISTAR MUSICOS X CLIENTE\n ");
+    //printf(" 9. LISTAR TRABAJOS\n ");
+    //printf(" 10. MENU DE INFORMES\n ");
+    printf(" 11. SALIR del programa\n ");
+
+    //__fpurge(stdin);
+    fflush(stdin);
+    if(getNumInt(&auxOpcion, reintentos, numOpcMin, numOpcMax, "\n\nIngrese una opcion: ", "Opcion Incorrecta")==0)
+        opcion = auxOpcion;
+    else
+        opcion = -1;
+
+    return opcion;
+}
+
+int inicializar_Cliente(eCliente* list, int len)
+{
+    int i;
+    int retorno=-1;
+    if(list!=NULL && len>0)
+    {
+        for(i=0;i<len;i++)
+        {
+            list[i].isEmpty = TRUE;
+        }
+        retorno=0;
+    }
+    return retorno;
+}
+
+int hardcodear_Cliente(eCliente* list)
+{
+    eCliente auxlist[]=
+    {
+       {1, "AAA201", "weqqew", 1, FALSE},
+       {2, "DFR234", "tyutyu", 2, FALSE},
+       {3, "GFT564", "asdasd", 1, FALSE},
+       {4, "ACD321", "bnmnmm", 3, FALSE},
+       {5, "HTD656", "zxzxxz", 2, FALSE},
+       {6, "QSZ435", "qqqqqq", 3, FALSE},
+    };
+
+    for(int i=0; i<6; i++)
+    {
+        if(auxlist[i].isEmpty==FALSE)
+            list[i] = auxlist[i];
+    }
+    return 0;
+}
+
+int buscarIndexVacio_Cliente(eCliente* list, int len)
+{
+    int retorno=-1;
+    int index;
+    if(list!=NULL && len>0)
+    {
+        for(index=0;index<len;index++)
+        {
+            if(list[index].isEmpty==TRUE)
+            {
+                retorno = index;
+                break;
+            }
+        }
+    }
+    return retorno;
+}
