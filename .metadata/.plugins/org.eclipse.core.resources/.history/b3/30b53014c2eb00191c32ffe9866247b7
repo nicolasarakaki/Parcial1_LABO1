@@ -193,7 +193,6 @@ int procesarResiduos(ePedido* list, int len, eCliente* arrayCliente, int lenClie
 				list[indexPedido].hdpe = hdpeKilos;
 				list[indexPedido].ldpe = ldpeKilos;
 				list[indexPedido].pp = ppKilos;
-				list[indexPedido].estado = COMPLETADO;
 				retorno = 0;
 			}
 		}

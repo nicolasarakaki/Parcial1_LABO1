@@ -1,4 +1,4 @@
-21:42:04 **** Incremental Build of configuration Debug for project Parcial ****
+21:57:20 **** Incremental Build of configuration Debug for project Parcial ****
 make all 
 Building file: ../src/pedidos.c
 Invoking: GCC C Compiler
@@ -11,5 +11,5 @@ gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/valida
 Finished building target: Parcial
  
 
-21:42:04 Build Finished. 0 errors, 0 warnings. (took 313ms)
+21:57:20 Build Finished. 0 errors, 0 warnings. (took 321ms)
 
