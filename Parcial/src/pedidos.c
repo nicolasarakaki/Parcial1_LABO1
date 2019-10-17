@@ -30,25 +30,29 @@ int inicializar_Pedido(ePedido* list, int len)
     return retorno;
 }
 
-/*int hardcodear_Pedido(ePedido* list)
+int hardcodear_Pedido(ePedido* list)
 {
 	ePedido auxlist[]=
     {
-       {1, "Juan", "Gonzales", 23, 1, 2, FALSE},
-       {2, "Pedro", "Picapiedra", 60, 2, 1, FALSE},
-       {3, "Mario", "Bros", 50, 3, 3, FALSE},
-       {4, "Luigi", "Nobros", 48, 6, 4, FALSE},
-       {5, "Pepe", "Sapo", 10, 1, 3, FALSE},
-       {6, "Jorge", "Alfajor", 15, 5, 1, FALSE},
+       {1, 1, 1000, 200, 200, 200, COMPLETADO, FALSE},
+       {2, 3, 3000, 1500, 1000, 200, PENDIENTE, FALSE},
+       {3, 5, 2000, 1200, 200, 100, COMPLETADO, FALSE},
+       {4, 2, 500, 100, 150, 100, PENDIENTE, FALSE},
+       {5, 4, 800, 100, 140, 300, COMPLETADO, FALSE},
+       {6, 3, 100, 10, 50, 40, COMPLETADO, FALSE},
+       {7, 6, 1200, 120, 200, 150, PENDIENTE, FALSE},
+       {8, 2, 400, 200, 20, 10, COMPLETADO, FALSE},
+       {9, 4, 500, 150, 50, 100, PENDIENTE, FALSE},
+       {10, 1, 300, 150, 50, 20, COMPLETADO, FALSE},
     };
 
-    for(int i=0; i<6; i++)
+    for(int i=0; i<10; i++)
     {
         if(auxlist[i].isEmpty==FALSE)
             list[i] = auxlist[i];
     }
     return 0;
-}*/
+}
 
 int buscarIndexVacio_Pedido(ePedido* list, int len)
 {
@@ -141,7 +145,8 @@ void listar_PedidoPendiente(ePedido* list, int len, eCliente* arrayCliente, int 
 {
     int i;
 
-    printf("\n\nID\tCUIT\tDIRECCION\t\tKILOS\n");
+    printf("\n\nID\tCUIT\t\tDIRECCION\t\tKILOS\n");
+    printf("--\t----\t\t---------\t\t-----\n");
     for(i=0;i<len;i++)
     {
         if(list[i].isEmpty==FALSE && list[i].estado==PENDIENTE)
@@ -210,7 +215,7 @@ int print_PedidoProcesado(ePedido* list, int index, int len, eCliente* arrayClie
     indexCliente = buscar_ClienteById(arrayCliente, list[index].idCliente, lenCliente);
     if(list!=NULL && index<len)
     {
-    	printf("%d\t%s\t%s\t\t%d\n",list[index].id, arrayCliente[indexCliente].cuit, arrayCliente[indexCliente].direccion, list[index].kilos);
+    	printf("%d   %s%18s     %.2f\t  %7.2f%10.2f\n",list[index].id, arrayCliente[indexCliente].cuit, arrayCliente[indexCliente].direccion, list[index].hdpe, list[index].ldpe, list[index].pp);
         retorno=0;
     }
     else
@@ -224,12 +229,13 @@ void listar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int 
 {
     int i;
 
-    printf("\n\nID\tCUIT\tDIRECCION\t\tKILOS\n");
+    printf("\n\nID\tCUIT\t\tDIRECCION\tHDPE\t   LDPE\t      PP\n");
+    printf("--\t----\t\t---------\t----\t   ----\t      --\n");
     for(i=0;i<len;i++)
     {
-        if(list[i].isEmpty==FALSE && list[i].estado==PENDIENTE)
+        if(list[i].isEmpty==FALSE && list[i].estado==COMPLETADO)
         {
-            print_PedidoPendiente(list,i,len, arrayCliente, lenCliente);
+            print_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
         }
     }
 }
@@ -247,3 +253,56 @@ void listar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int 
             break;
     }
 }*/
+
+
+int cantidadPedidosXCliente(ePedido* list, int len, eCliente* arrayCliente, int indexCliente)
+{
+    int retorno = -1;
+    int i;
+    int cantPedidos = 0;
+
+    for(i=0; i<len; i++)
+    {
+        if(list[i].idCliente==arrayCliente[indexCliente].id && list[i].estado==PENDIENTE && list[i].isEmpty == FALSE)
+        {
+            cantPedidos++;
+        }
+    }
+
+    retorno = cantPedidos;
+
+    return retorno;
+}
+
+int print_ClienteConPedido(ePedido* list, int len, eCliente* arrayCliente, int indexCliente, int lenCliente)
+{
+    int retorno=-1;
+    int cantDePedidos;
+
+    cantDePedidos = cantidadPedidosXCliente(list, len, arrayCliente, indexCliente);
+    if(list!=NULL && indexCliente<lenCliente)
+    {
+        printf("%d      %-14s%10s  \t%s  \t%10s   \t%d\n", arrayCliente[indexCliente].id, arrayCliente[indexCliente].nombreEmpresa, arrayCliente[indexCliente].cuit, arrayCliente[indexCliente].direccion, arrayCliente[indexCliente].localidad, cantDePedidos);
+        retorno=0;
+    }
+    else
+    {
+        printf("Error al imprimir los datos de la orquesta \n");
+    }
+    return retorno;
+}
+
+void listar_ClienteConPedido(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+{
+    int i;
+
+    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\tPedidos\n");
+    printf("--\t------\t\t----\t\t---------\t---------\t-------\n");
+    for(i=0;i<lenCliente;i++)
+    {
+        if(arrayCliente[i].isEmpty==FALSE)
+        {
+            print_ClienteConPedido(list, len, arrayCliente, i, lenCliente);
+        }
+    }
+}

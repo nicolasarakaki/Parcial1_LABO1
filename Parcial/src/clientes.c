@@ -29,11 +29,10 @@ int menuConOpcion(int reintentos, int numOpcMin, int numOpcMax)
     printf(" 4. CREAR PEDIDOS\n");
     printf(" 5. PROCESAR RESIDUOS\n");
     printf(" 6. IMPRIMIR CLIENTES\n");
-    printf(" 7. IMPRIMIR PEDIDOS\n");
-    //printf(" 8. LISTAR PEDIDOSS X CLIENTE\n ");
-    //printf(" 9. LISTAR TRABAJOS\n ");
-    //printf(" 10. MENU DE INFORMES\n ");
-    printf(" 11. SALIR del programa\n ");
+    printf(" 7. IMPRIMIR PEDIDOS PENDIENTES\n");
+    printf(" 8. IMPRIMIR PEDIDOS PROCESADOS\n");
+    printf(" 9. MENU DE INFORMES\n ");
+    printf("11. SALIR del programa\n ");
 
     __fpurge(stdin);
     //fflush(stdin);
@@ -60,16 +59,16 @@ int inicializar_Cliente(eCliente* list, int len)
     return retorno;
 }
 
-/*int hardcodear_Cliente(eCliente* list)
+int hardcodear_Cliente(eCliente* list)
 {
     eCliente auxlist[]=
     {
-       {1, "AAA201", "weqqew", 1, FALSE},
-       {2, "DFR234", "tyutyu", 2, FALSE},
-       {3, "GFT564", "asdasd", 1, FALSE},
-       {4, "ACD321", "bnmnmm", 3, FALSE},
-       {5, "HTD656", "zxzxxz", 2, FALSE},
-       {6, "QSZ435", "qqqqqq", 3, FALSE},
+       {1, "MANAOS", "30-11111111-1", "Manaos 111", "Lanus", FALSE},
+       {2, "ARCOR", "30-22222222-2", "Arcor 222", "Olivos", FALSE},
+       {3, "SAMSUNG", "30-33333333-3", "Samsung 333", "Corea", FALSE},
+       {4, "SONY", "30-44444444-4", "Sony 444", "CABA", FALSE},
+       {5, "TOYOTA", "30-55555555-5", "Toyota 555", "Zarate", FALSE},
+       {6, "QUERUBIN", "30-66666666-6", "Querubin 666", "Mataderos", FALSE},
     };
 
     for(int i=0; i<6; i++)
@@ -78,7 +77,7 @@ int inicializar_Cliente(eCliente* list, int len)
             list[i] = auxlist[i];
     }
     return 0;
-}*/
+}
 
 int buscarIndexVacio_Cliente(eCliente* list, int len)
 {
@@ -108,7 +107,7 @@ int alta_Cliente(eCliente* list, int len, int id)
     if(list!=NULL && index>=0 && index<len)
     {
         if(getString(auxList.nombreEmpresa, TAM_CLIENTE , 3, "\nEscriba el nombre de la empresa: ", "Error, intente nuevamente\n") == 0
-        && getStringAlfaNum(auxList.cuit, TAM_CUIT, 3, "\nEscriba el CUIT: ", "Error, intente nuevamente\n") == 0
+        && getCuit(auxList.cuit, TAM_CUIT, 3, "\nEscriba el CUIT (con guiones): ", "Error, intente nuevamente\n") == 0
 		&& getStringAlfaNum(auxList.direccion, TAM_PALABRAS, 3, "\nEscriba la direccion: ", "Error, intente nuevamente\n") == 0
 		&& getString(auxList.localidad, TAM_PALABRAS, 3, "\nEscriba la Localidad: ", "Error, intente nuevamente\n") == 0)
         {
@@ -152,12 +151,12 @@ int print_Cliente(eCliente* list, int index, int len)
     if(list!=NULL && index<len)
     {
         //cargarDescripcionCliente(list[index].tipo, descripcion);
-        printf("%d\t%s\t%s\t\t%s\t\t%s\n",list[index].id, list[index].nombreEmpresa, list[index].cuit, list[index].direccion, list[index].localidad);
+        printf("%d      %-14s%10s  \t%s  \t%s\n",list[index].id, list[index].nombreEmpresa, list[index].cuit, list[index].direccion, list[index].localidad);
         retorno=0;
     }
     else
     {
-        printf("Error al imprimir los datos de la orquesta \n");
+        printf("Error al imprimir los datos del cliente \n");
     }
     return retorno;
 }
@@ -166,7 +165,8 @@ void listar_Cliente(eCliente* list, int len)
 {
     int i;
 
-    printf("\n\nID\tNOMBRE\t\tCUIT\t\t\tDireccion\t\tLocalidad\n");
+    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\n");
+    printf("--\t------\t\t----\t\t---------\t---------\n");
     for(i=0;i<len;i++)
     {
         if(list[i].isEmpty==FALSE)
@@ -193,7 +193,8 @@ int editar_Cliente(eCliente* list, int len)
            {
                do{
                     //system("cls");
-            	    printf("\n\nID\tNOMBRE\t\tCUIT\t\t\tDireccion\t\tLocalidad\n");
+            	    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\n");
+                    printf("--\t------\t\t----\t\t---------\t---------\n");
                     print_Cliente(list, index, len);
 
                     printf("\nQue desea modificar?:\n\n ");
@@ -255,7 +256,8 @@ int baja_Cliente(eCliente* list, int len)
         index = buscar_ClienteById(list, id, len);
         if(index!=-1)
         {
-        	printf("\n\nID\tNOMBRE\t\tCUIT\t\t\tDireccion\t\tLocalidad\n");
+            printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\n");
+            printf("--\t------\t\t----\t\t---------\t---------\n");
         	print_Cliente(list, index, len);
 
         	printf("\nConfirmar borrado?: \n\n ");

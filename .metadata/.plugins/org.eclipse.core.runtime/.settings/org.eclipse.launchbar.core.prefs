@@ -6,3 +6,4 @@ activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 configDescList=org.eclipse.launchbar.core.descriptorType.default\:Parcial
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Parcial/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Parcial/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

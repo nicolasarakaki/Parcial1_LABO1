@@ -17,6 +17,7 @@
 #include "validaciones.h"
 #include "pedidos.h"
 #include "clientes.h"
+#include "informes.h"
 
 #define OPCIONMIN 1
 #define OPCIONMAX 11
@@ -27,18 +28,17 @@ int main()
     int clienteID=1;
     int pedidoID=1;
     int index;
-    //int trabajosID=1;
     int flag1=0;
     int flag2=0;
-    //int flagHardcode=1;
+    int flagHardcode=1;
 
     eCliente cliente[TAM_CLIENTE];
     inicializar_Cliente(cliente, TAM_CLIENTE);
-    //hardcodear_Cliente(cliente);
+    hardcodear_Cliente(cliente); ///ACTIVADOR DE HARDCODEO
 
     ePedido pedido[TAM_PEDIDOS];
     inicializar_Pedido(pedido, TAM_PEDIDOS);
-    //hardcodear_Cliente(cliente);
+    hardcodear_Pedido(pedido);
 
     do{
         //system("cls");
@@ -53,7 +53,8 @@ int main()
                 {
                     index = buscar_ClienteById(cliente, clienteID, TAM_CLIENTE);
                     printf("\nAlta Exitosa\n\n");
-                    printf("\n\nID\tNOMBRE\t\tCUIT\t\t\tDireccion\t\tLocalidad\n");
+                    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\n");
+                    printf("--\t------\t\t----\t\t---------\t---------\n");
                     print_Cliente(cliente, index, TAM_CLIENTE);
                     clienteID++;
                     flag1=1;
@@ -113,19 +114,17 @@ int main()
                     printf("\n\nNo hay datos cargados en el Alta\n\n");
                 break;
 
-           /* case 6:
-                //system("cls");
-                if(flag2==1)
+            case 6:
+                if(flag1==1 || flagHardcode==1)
                 {
-                    if(baja_Cliente(cliente, TAM_PEDIDOS)==-1)
-                        printf("\n\nError en la Baja\n");
+                    listar_ClienteConPedido(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
                 }
                 else
                     printf("\n\nNo hay datos cargados en el Alta\n\n");
-                break;*/
+                break;
 
            case 7:
-                if(flag2==1 /*|| flagHardcode==1*/)
+                if(flag2==1 || flagHardcode==1)
                 {
                     listar_PedidoPendiente(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
                 }
@@ -133,20 +132,32 @@ int main()
                     printf("\n\nNo hay datos cargados en el Alta\n\n");
                 break;
 
-            /*case 8:
+            case 8:
+                if(flag2==1 || flagHardcode==1)
+                {
+                    listar_PedidoProcesado(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                }
+                else
+                    printf("\n\nNo hay datos cargados en el Alta\n\n");
+                break;
 
-                listar_ClientesXOquesta(cliente, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+            case 9:
+                //system("cls");
+                switch(menuInformes(3, 1, 12))
+                {
+                    case 1:
+                            informar_promedioDelTipoPlastico(pedido, TAM_PEDIDOS);
+                        break;
 
-                break;*/
+                    case 2:
+                            informar_ClienteDeMayorCantPlastico(cliente, TAM_CLIENTE, pedido, TAM_PEDIDOS);
+                        break;
 
-           case 10:
-               if(flag1==1 /*|| flagHardcode==1*/)
-               {
-                   listar_Cliente(cliente, TAM_CLIENTE);
-               }
-               else
-                   printf("\n\nNo hay datos cargados en el Alta\n\n");
-               break;
+                    case 3:
+                            //listarTrabajosXAuto(trabajos, CANTTRABAJOS, autos, TAMAUTOS, servicios, CANTSERVICIOS, marcas, CANTMARCAS, colores, CANTCOLORES);
+                        break;
+                }
+                break;
 
             case 11:
                 salir=1;
@@ -162,4 +173,3 @@ int main()
 
     return EXIT_SUCCESS;
 }
-

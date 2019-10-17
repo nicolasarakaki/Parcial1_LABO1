@@ -67,4 +67,16 @@ int getString(char* pNombre, int limite, int reintentos, char* mensaje, char* me
 int getStringAlfaNum(char* pNombre, int limite, int reintentos, char* mensaje, char* mensajeError);
 
 
+/** \brief
+ *  Funcion para obtener una cadena de caracteres (solo numeros con guiones) por teclado con mensajes al usuario.
+ *  \param pNombre char*    Direccion de memoria a almacenar la cadena ingresada por teclado.
+ *  \param limite int       Longitud del array de caracteres a ingresar por teclado.
+ *  \param reintentos int   Cantidad de reintentos al usuario.
+ *  \param mensaje char*    Mensaje personalizado que solicita el dato al usuario.
+ *  \param error char*      Mensaje personalizado en caso de error.
+ *  \return         Retorna 0 si obtuvo la cadena correctamente y -1 si hubo un error.
+ *
+ */
+int getCuit(char* pNombre, int limite, int reintentos, char* mensaje, char* mensajeError);
+
 #endif /* VALIDACIONES_H_ */

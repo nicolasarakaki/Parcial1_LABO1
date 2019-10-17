@@ -11,7 +11,7 @@
 #define TAM_CLIENTE 100
 #define TAM_NOMBRE 64
 #define TAM_PALABRAS 64
-#define TAM_CUIT 13
+#define TAM_CUIT 14
 
 #define TRUE 1
 #define FALSE 0
@@ -140,7 +140,6 @@ int print_Cliente(eCliente* list, int index, int len);
  */
 void listar_Cliente(eCliente* list, int len);
 
-void cargarDescripcionCliente(int idCliente, char desc[]);
 
 
 /* \brief Lista los datos cargados en el array de Cliente, solicita ingresar la patente deseada y devuelve el numero de posicion de la patente.

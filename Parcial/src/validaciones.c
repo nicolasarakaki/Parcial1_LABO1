@@ -181,7 +181,7 @@ static int getStr(char* string, int limite)
 int getStringAlfaNum(char* pNombre, int limite, int reintentos, char* mensaje, char* mensajeError)
 {
     int retorno = -1;
-    int i;
+    //int i;
     char stringAux[100];
 
     if(pNombre != NULL && mensaje != NULL && mensajeError != NULL && limite > 0 && reintentos >= 0)
@@ -192,8 +192,8 @@ int getStringAlfaNum(char* pNombre, int limite, int reintentos, char* mensaje, c
             printf(mensaje);
             if(getStr(stringAux, limite) == 0)
             {
-                for(i = 0; stringAux[i]; i++)
-                    stringAux[i] = toupper(stringAux[i]);
+                /*for(i = 0; stringAux[i]; i++)
+                    stringAux[i] = toupper(stringAux[i]);*/
 
                 strncpy(pNombre, stringAux, limite);
                 retorno = 0;
@@ -204,6 +204,60 @@ int getStringAlfaNum(char* pNombre, int limite, int reintentos, char* mensaje, c
         }while(reintentos >= 0);
     }
 
+    return retorno;
+}
+
+static int esNumeroCuit(char* cadena);
+int getCuit(char* pNombre, int limite, int reintentos, char* mensaje, char* mensajeError)
+{
+    int retorno = -1;
+    char stringAux[100];
+
+    if(pNombre != NULL && mensaje != NULL && mensajeError != NULL && limite > 0 && reintentos >= 0)
+    {
+        do
+        {
+            reintentos--;
+            printf(mensaje);
+            if(getStr(stringAux, limite) == 0 && esNumeroCuit(stringAux)==0)
+            {
+                strncpy(pNombre, stringAux, limite);
+                retorno = 0;
+                break;
+            }
+            else
+                printf(mensajeError);
+        }while(reintentos >= 0);
+    }
+
+    return retorno;
+}
+
+
+static int esNumeroCuit(char* cadena)
+{
+    int retorno=-1;
+    int i=0;
+    int contadorGuion=0;
+    if(cadena!=NULL)
+    {
+        while(cadena[i]!='\0')
+        {
+            if(cadena[i]>='0' && cadena[i]<='9')
+            {
+                i++;
+            }
+            else if(cadena[i]=='-')
+            {
+                contadorGuion++;
+                i++;
+            }
+            else
+                break;
+        }
+        if(cadena[i]=='\0' && contadorGuion==2 && cadena[2]=='-' && cadena[11]=='-')
+            retorno = 0;
+    }
     return retorno;
 }
 

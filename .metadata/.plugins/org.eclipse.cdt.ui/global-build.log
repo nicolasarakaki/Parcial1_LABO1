@@ -2936,3 +2936,328 @@ Invoking: GCC C Linker
 gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
 Finished building target: Parcial
  
+18:40:02 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+18:40:05 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+18:47:16 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:8:0: error: unterminated #ifndef
+ #ifndef PEDIDOSS_H_
+ 
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+In file included from ../src/informes.h:11:0,
+                 from ../src/Parcial.c:20:
+../src/pedidos.h:8:0: error: unterminated #ifndef
+ #ifndef PEDIDOSS_H_
+ 
+In file included from ../src/Parcial.c:20:0:
+../src/informes.h:21:39: error: unknown type name ‘ePedido’
+ void informar_promedioDelTipoPlastico(ePedido* arrayPedido, int lenPedido);
+                                       ^~~~~~~
+../src/informes.h:23:82: error: unknown type name ‘ePedido’
+ void informar_ClienteDeMayorCantPlastico(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido);
+                                                                                  ^~~~~~~
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:39:5: error: unknown type name ‘ePedido’
+     ePedido pedido[TAM_PEDIDOS];
+     ^~~~~~~
+../src/Parcial.c:39:20: error: ‘TAM_PEDIDOS’ undeclared (first use in this function)
+     ePedido pedido[TAM_PEDIDOS];
+                    ^~~~~~~~~~~
+../src/Parcial.c:39:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_Pedido’ [-Wimplicit-function-declaration]
+     inicializar_Pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:41:5: warning: implicit declaration of function ‘hardcodear_Pedido’ [-Wimplicit-function-declaration]
+     hardcodear_Pedido(pedido);
+     ^~~~~~~~~~~~~~~~~
+../src/Parcial.c:94:20: warning: implicit declaration of function ‘alta_Pedido’ [-Wimplicit-function-declaration]
+                 if(alta_Pedido(pedido, TAM_PEDIDOS, pedidoID, cliente, TAM_CLIENTE)==-1)
+                    ^~~~~~~~~~~
+../src/Parcial.c:108:24: warning: implicit declaration of function ‘procesarResiduos’ [-Wimplicit-function-declaration]
+                     if(procesarResiduos(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE)==-1)
+                        ^~~~~~~~~~~~~~~~
+../src/Parcial.c:120:21: warning: implicit declaration of function ‘listar_ClienteConPedido’ [-Wimplicit-function-declaration]
+                     listar_ClienteConPedido(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:129:21: warning: implicit declaration of function ‘listar_PedidoPendiente’ [-Wimplicit-function-declaration]
+                     listar_PedidoPendiente(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:138:21: warning: implicit declaration of function ‘listar_PedidoProcesado’ [-Wimplicit-function-declaration]
+                     listar_PedidoProcesado(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:149:29: warning: implicit declaration of function ‘informar_promedioDelTipoPlastico’ [-Wimplicit-function-declaration]
+                             informar_promedioDelTipoPlastico(pedido, TAM_PEDIDOS);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:153:29: warning: implicit declaration of function ‘informar_ClienteDeMayorCantPlastico’ [-Wimplicit-function-declaration]
+                             informar_ClienteDeMayorCantPlastico(cliente, TAM_CLIENTE, pedido, TAM_PEDIDOS);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:39:13: warning: unused variable ‘pedido’ [-Wunused-variable]
+     ePedido pedido[TAM_PEDIDOS];
+             ^~~~~~
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:48:33 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:8:0: error: unterminated #ifndef
+ #ifndef PEDIDOSS_H_
+ 
+In file included from ../src/informes.h:11:0,
+                 from ../src/Parcial.c:20:
+../src/pedidos.h:8:0: error: unterminated #ifndef
+ #ifndef PEDIDOSS_H_
+ 
+In file included from ../src/Parcial.c:20:0:
+../src/informes.h:21:39: error: unknown type name ‘ePedido’
+ void informar_promedioDelTipoPlastico(ePedido* arrayPedido, int lenPedido);
+                                       ^~~~~~~
+../src/informes.h:23:82: error: unknown type name ‘ePedido’
+ void informar_ClienteDeMayorCantPlastico(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido);
+                                                                                  ^~~~~~~
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:39:5: error: unknown type name ‘ePedido’
+     ePedido pedido[TAM_PEDIDOS];
+     ^~~~~~~
+../src/Parcial.c:39:20: error: ‘TAM_PEDIDOS’ undeclared (first use in this function)
+     ePedido pedido[TAM_PEDIDOS];
+                    ^~~~~~~~~~~
+../src/Parcial.c:39:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_Pedido’ [-Wimplicit-function-declaration]
+     inicializar_Pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:41:5: warning: implicit declaration of function ‘hardcodear_Pedido’ [-Wimplicit-function-declaration]
+     hardcodear_Pedido(pedido);
+     ^~~~~~~~~~~~~~~~~
+../src/Parcial.c:94:20: warning: implicit declaration of function ‘alta_Pedido’ [-Wimplicit-function-declaration]
+                 if(alta_Pedido(pedido, TAM_PEDIDOS, pedidoID, cliente, TAM_CLIENTE)==-1)
+                    ^~~~~~~~~~~
+../src/Parcial.c:108:24: warning: implicit declaration of function ‘procesarResiduos’ [-Wimplicit-function-declaration]
+                     if(procesarResiduos(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE)==-1)
+                        ^~~~~~~~~~~~~~~~
+../src/Parcial.c:120:21: warning: implicit declaration of function ‘listar_ClienteConPedido’ [-Wimplicit-function-declaration]
+                     listar_ClienteConPedido(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:129:21: warning: implicit declaration of function ‘listar_PedidoPendiente’ [-Wimplicit-function-declaration]
+                     listar_PedidoPendiente(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:138:21: warning: implicit declaration of function ‘listar_PedidoProcesado’ [-Wimplicit-function-declaration]
+                     listar_PedidoProcesado(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:149:29: warning: implicit declaration of function ‘informar_promedioDelTipoPlastico’ [-Wimplicit-function-declaration]
+                             informar_promedioDelTipoPlastico(pedido, TAM_PEDIDOS);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:153:29: warning: implicit declaration of function ‘informar_ClienteDeMayorCantPlastico’ [-Wimplicit-function-declaration]
+                             informar_ClienteDeMayorCantPlastico(cliente, TAM_CLIENTE, pedido, TAM_PEDIDOS);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:39:13: warning: unused variable ‘pedido’ [-Wunused-variable]
+     ePedido pedido[TAM_PEDIDOS];
+             ^~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:49:30 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+In file included from ../src/Parcial.c:18:0:
+../src/pedidos.h:8:0: error: unterminated #ifndef
+ #ifndef PEDIDOSS_H_
+ 
+In file included from ../src/informes.h:11:0,
+                 from ../src/Parcial.c:20:
+../src/pedidos.h:8:0: error: unterminated #ifndef
+ #ifndef PEDIDOSS_H_
+ 
+In file included from ../src/Parcial.c:20:0:
+../src/informes.h:21:39: error: unknown type name ‘ePedido’
+ void informar_promedioDelTipoPlastico(ePedido* arrayPedido, int lenPedido);
+                                       ^~~~~~~
+../src/informes.h:23:82: error: unknown type name ‘ePedido’
+ void informar_ClienteDeMayorCantPlastico(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido);
+                                                                                  ^~~~~~~
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:39:5: error: unknown type name ‘ePedido’
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+     ePedido pedido[TAM_PEDIDOS];
+     ^~~~~~~
+../src/Parcial.c:39:20: error: ‘TAM_PEDIDOS’ undeclared (first use in this function)
+     ePedido pedido[TAM_PEDIDOS];
+                    ^~~~~~~~~~~
+../src/Parcial.c:39:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/Parcial.c:40:5: warning: implicit declaration of function ‘inicializar_Pedido’ [-Wimplicit-function-declaration]
+     inicializar_Pedido(pedido, TAM_PEDIDOS);
+     ^~~~~~~~~~~~~~~~~~
+../src/Parcial.c:41:5: warning: implicit declaration of function ‘hardcodear_Pedido’ [-Wimplicit-function-declaration]
+     hardcodear_Pedido(pedido);
+     ^~~~~~~~~~~~~~~~~
+../src/Parcial.c:94:20: warning: implicit declaration of function ‘alta_Pedido’ [-Wimplicit-function-declaration]
+                 if(alta_Pedido(pedido, TAM_PEDIDOS, pedidoID, cliente, TAM_CLIENTE)==-1)
+                    ^~~~~~~~~~~
+../src/Parcial.c:108:24: warning: implicit declaration of function ‘procesarResiduos’ [-Wimplicit-function-declaration]
+                     if(procesarResiduos(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE)==-1)
+                        ^~~~~~~~~~~~~~~~
+../src/Parcial.c:120:21: warning: implicit declaration of function ‘listar_ClienteConPedido’ [-Wimplicit-function-declaration]
+                     listar_ClienteConPedido(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:129:21: warning: implicit declaration of function ‘listar_PedidoPendiente’ [-Wimplicit-function-declaration]
+                     listar_PedidoPendiente(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:138:21: warning: implicit declaration of function ‘listar_PedidoProcesado’ [-Wimplicit-function-declaration]
+                     listar_PedidoProcesado(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                     ^~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:149:29: warning: implicit declaration of function ‘informar_promedioDelTipoPlastico’ [-Wimplicit-function-declaration]
+                             informar_promedioDelTipoPlastico(pedido, TAM_PEDIDOS);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:153:29: warning: implicit declaration of function ‘informar_ClienteDeMayorCantPlastico’ [-Wimplicit-function-declaration]
+                             informar_ClienteDeMayorCantPlastico(cliente, TAM_CLIENTE, pedido, TAM_PEDIDOS);
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:39:13: warning: unused variable ‘pedido’ [-Wunused-variable]
+     ePedido pedido[TAM_PEDIDOS];
+             ^~~~~~
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:50:04 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+../src/clientes.c: In function ‘alta_Cliente’:
+../src/clientes.c:110:12: warning: implicit declaration of function ‘getCuit’ [-Wimplicit-function-declaration]
+         && getCuit(auxList.cuit, TAM_CUIT, 3, "\nEscriba el CUIT (con guiones): ", "Error, intente nuevamente\n") == 0
+            ^~~~~~~
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+./src/clientes.o: En la función `alta_Cliente':
+/home/alumno/B/Parcial/Debug/../src/clientes.c:110: referencia a `getCuit' sin definir
+makefile:30: fallo en las instrucciones para el objetivo 'Parcial'
+collect2: error: ld returned 1 exit status
+make: *** [Parcial] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:52:10 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/validaciones.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/validaciones.d" -MT"src/validaciones.o" -o "src/validaciones.o" "../src/validaciones.c"
+Finished building: ../src/validaciones.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+18:52:39 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+Finished building: ../src/pedidos.c
+ 
+Building file: ../src/validaciones.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/validaciones.d" -MT"src/validaciones.o" -o "src/validaciones.o" "../src/validaciones.c"
+Finished building: ../src/validaciones.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+18:53:03 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+18:54:13 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+18:56:48 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:20:04 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:20:07 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:20:48 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:20:50 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:22:01 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:23:31 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
