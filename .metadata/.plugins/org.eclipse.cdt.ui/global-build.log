@@ -3261,3 +3261,1225 @@ make: No se hace nada para 'all'.
 19:23:31 **** Incremental Build of configuration Debug for project Parcial ****
 make all 
 make: No se hace nada para 'all'.
+18:28:35 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+18:28:47 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+18:33:16 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+18:41:44 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+18:45:20 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+18:50:46 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+18:51:26 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/clientes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clientes.d" -MT"src/clientes.o" -o "src/clientes.o" "../src/clientes.c"
+Finished building: ../src/clientes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+18:57:47 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/pedidos.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pedidos.d" -MT"src/pedidos.o" -o "src/pedidos.o" "../src/pedidos.c"
+Finished building: ../src/pedidos.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+18:58:00 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:23:28 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_clientesConMasPedidos’:
+../src/informes.c:78:12: warning: missing terminating " character
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/informes.o'
+     printf("\nMAYOR PEDIDO:);
+            ^
+../src/informes.c:78:12: error: missing terminating " character
+     printf("\nMAYOR PEDIDO:);
+            ^~~~~~~~~~~~~~~~~~
+../src/informes.c:79:72: error: expected ‘)’ before ‘;’ token
+     printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\tPedidos\n");
+                                                                        ^
+../src/informes.c:79:5: warning: passing argument 1 of ‘printf’ makes pointer from integer without a cast [-Wint-conversion]
+     printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\tPedidos\n");
+     ^~~~~~
+In file included from ../src/informes.c:9:0:
+/usr/include/stdio.h:364:12: note: expected ‘const char * restrict’ but argument is of type ‘int’
+ extern int printf (const char *__restrict __format, ...);
+            ^~~~~~
+../src/informes.c:87:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/informes.c:56:6: warning: variable ‘indexCliente’ set but not used [-Wunused-but-set-variable]
+  int indexCliente;
+      ^~~~~~~~~~~~
+make: *** [src/informes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:24:30 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:26:50 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:26:52 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:34:17 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:34:19 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:39:00 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:39:45 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:39:49 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:44:25 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:44:28 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:50:38 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:51:42 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:51:44 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:56:15 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:56:19 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:57:23 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:57:25 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+19:59:30 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:59:47 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+19:59:49 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:01:00 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:01:02 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:06:24 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘informar_clienteConMasPedidos’:
+../src/Parcial.c:26:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+In file included from ../src/Parcial.c:20:0:
+../src/informes.h:25:6: error: old-style parameter declarations in prototyped function definition
+ void informar_clienteConMasPedidos(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido)
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial.c:175:1: error: expected ‘{’ at end of input
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/Parcial.o'
+ }
+ ^
+make: *** [src/Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:06:47 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:06:51 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:10:01 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:10:04 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:11:17 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:11:19 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:11:36 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:14:15 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:14:34 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:14:36 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:19:42 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_ClienteMayorKilos’:
+../src/informes.c:325:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/informes.c:325:1: error: expected declaration or statement at end of input
+At top level:
+../src/informes.c:248:6: warning: ‘informar_ClienteDeMayorCantPlastico’ defined but not used [-Wunused-function]
+ void informar_ClienteDeMayorCantPlastico(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido)
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:211:6: warning: ‘informar_promedioDelTipoPlastico’ defined but not used [-Wunused-function]
+ void informar_promedioDelTipoPlastico(ePedido* arrayPedido, int lenPedido)
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/informes.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/informes.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+20:19:56 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_ClienteMayorKilos’:
+../src/informes.c:325:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+../src/informes.c:248:6: warning: ‘informar_ClienteDeMayorCantPlastico’ defined but not used [-Wunused-function]
+ void informar_ClienteDeMayorCantPlastico(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido)
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:211:6: warning: ‘informar_promedioDelTipoPlastico’ defined but not used [-Wunused-function]
+ void informar_promedioDelTipoPlastico(ePedido* arrayPedido, int lenPedido)
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/informes.o'
+make: *** [src/informes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:20:20 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:21:12 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:21:15 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:22:01 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:22:03 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:25:40 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:26:33 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:26:36 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:49:46 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_ClientesMas1000Kilos’:
+../src/informes.c:249:9: warning: unused variable ‘j’ [-Wunused-variable]
+     int j;
+         ^
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:51:09 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:51:11 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:53:59 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:54:01 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:56:21 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:56:23 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:56:46 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:56:47 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+20:58:48 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:59:30 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+20:59:32 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:05:36 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_ClientesMenos100Kilos’:
+../src/informes.c:324:12: warning: unknown escape sequence: '\M'
+     printf("\MENOR KILOS RECICLADOS: %.2f Kg", cantMin);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:05:37 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:05:39 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:05:45 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:08:04 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_ClientesMenos100Kilos’:
+../src/informes.c:324:12: warning: unknown escape sequence: '\M'
+     printf("\MENOR KILOS RECICLADOS: %.2f Kg", cantMin);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:08:33 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:08:35 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:10:37 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:10:38 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:11:55 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:12:03 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:15:57 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:15:59 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:27:15 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:32:06 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:354:78: error: expected expression before ‘)’ token
+      printf("%d   %s%.2f\n",list[index].id, arrayCliente[indexCliente].cuit, );
+                                                                              ^
+../src/informes.c: At top level:
+../src/informes.c:364:6: error: conflicting types for ‘informar_PedidoProcesado’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:346:5: note: previous definition of ‘informar_PedidoProcesado’ was here
+ int informar_PedidoProcesado(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:374:13: warning: implicit declaration of function ‘print_PedidoProcesado’ [-Wimplicit-function-declaration]
+             print_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+             ^~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: In function ‘calcularPromedioDeKilos’:
+../src/informes.c:382:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+make: *** [src/informes.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/informes.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+21:34:08 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:353:25: warning: implicit declaration of function ‘calcularPromedioDeKilos’ [-Wimplicit-function-declaration]
+     promedioReciclado = calcularPromedioDeKilos(list, index);
+                         ^~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: At top level:
+../src/informes.c:366:6: error: conflicting types for ‘informar_PedidoProcesado’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:346:5: note: previous definition of ‘informar_PedidoProcesado’ was here
+ int informar_PedidoProcesado(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:376:13: warning: implicit declaration of function ‘print_PedidoProcesado’ [-Wimplicit-function-declaration]
+             print_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+             ^~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: At top level:
+../src/informes.c:381:7: error: conflicting types for ‘calcularPromedioDeKilos’
+ float calcularPromedioDeKilos(ePedido* arrayPedido, int index)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:353:25: note: previous implicit declaration of ‘calcularPromedioDeKilos’ was here
+     promedioReciclado = calcularPromedioDeKilos(list, index);
+                         ^~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: In function ‘calcularPromedioDeKilos’:
+../src/informes.c:384:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/informes.o'
+make: *** [src/informes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:34:30 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:34:34 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:35:13 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:40:50 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:42:52 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:353:25: warning: implicit declaration of function ‘calcularPromedioDeKilos’ [-Wimplicit-function-declaration]
+     promedioReciclado = calcularPromedioDeKilos(list, index);
+                         ^~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: At top level:
+../src/informes.c:366:6: error: conflicting types for ‘informar_PedidoProcesado’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:346:5: note: previous definition of ‘informar_PedidoProcesado’ was here
+ int informar_PedidoProcesado(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:376:13: warning: implicit declaration of function ‘print_PedidoProcesado’ [-Wimplicit-function-declaration]
+             print_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+             ^~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: At top level:
+../src/informes.c:381:7: error: conflicting types for ‘calcularPromedioDeKilos’
+ float calcularPromedioDeKilos(ePedido* arrayPedido, int index)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:353:25: note: previous implicit declaration of ‘calcularPromedioDeKilos’ was here
+     promedioReciclado = calcularPromedioDeKilos(list, index);
+                         ^~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: In function ‘calcularPromedioDeKilos’:
+../src/informes.c:384:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+make: *** [src/informes.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/informes.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+21:43:01 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:353:25: warning: implicit declaration of function ‘calcularPromedioDeKilos’ [-Wimplicit-function-declaration]
+     promedioReciclado = calcularPromedioDeKilos(list, index);
+                         ^~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: At top level:
+../src/informes.c:366:6: error: conflicting types for ‘informar_PedidoProcesado’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:346:5: note: previous definition of ‘informar_PedidoProcesado’ was here
+ int informar_PedidoProcesado(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:376:13: warning: implicit declaration of function ‘print_PedidoProcesado’ [-Wimplicit-function-declaration]
+             print_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+             ^~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: At top level:
+../src/informes.c:381:7: error: conflicting types for ‘calcularPromedioDeKilos’
+ float calcularPromedioDeKilos(ePedido* arrayPedido, int index)
+       ^~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:353:25: note: previous implicit declaration of ‘calcularPromedioDeKilos’ was here
+     promedioReciclado = calcularPromedioDeKilos(list, index);
+                         ^~~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/informes.o'
+make: *** [src/informes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:26 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c:387:6: error: conflicting types for ‘informar_PedidoProcesado’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:367:5: note: previous definition of ‘informar_PedidoProcesado’ was here
+ int informar_PedidoProcesado(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:397:13: warning: implicit declaration of function ‘print_PedidoProcesado’ [-Wimplicit-function-declaration]
+             print_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+             ^~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/informes.o'
+make: *** [src/informes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:46 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c:387:6: error: conflicting types for ‘informar_PedidoProcesado’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:367:5: note: previous definition of ‘informar_PedidoProcesado’ was here
+ int informar_PedidoProcesado(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:397:45: warning: passing argument 3 of ‘informar_PedidoProcesado’ makes pointer from integer without a cast [-Wint-conversion]
+             informar_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+                                             ^~~
+../src/informes.c:387:6: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘int’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:397:50: warning: passing argument 4 of ‘informar_PedidoProcesado’ makes integer from pointer without a cast [-Wint-conversion]
+             informar_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+                                                  ^~~~~~~~~~~~
+../src/informes.c:387:6: note: expected ‘int’ but argument is of type ‘eCliente * {aka struct <anonymous> *}’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:397:13: error: too many arguments to function ‘informar_PedidoProcesado’
+             informar_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:387:6: note: declared here
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/informes.o'
+make: *** [src/informes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:45:36 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c:387:6: error: conflicting types for ‘informar_PedidoProcesado’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:367:5: note: previous definition of ‘informar_PedidoProcesado’ was here
+ int informar_PedidoProcesado(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c: In function ‘informar_PedidoProcesado’:
+../src/informes.c:397:45: warning: passing argument 3 of ‘informar_PedidoProcesado’ makes pointer from integer without a cast [-Wint-conversion]
+             informar_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+                                             ^~~
+../src/informes.c:387:6: note: expected ‘eCliente * {aka struct <anonymous> *}’ but argument is of type ‘int’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:397:50: warning: passing argument 4 of ‘informar_PedidoProcesado’ makes integer from pointer without a cast [-Wint-conversion]
+             informar_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+                                                  ^~~~~~~~~~~~
+../src/informes.c:387:6: note: expected ‘int’ but argument is of type ‘eCliente * {aka struct <anonymous> *}’
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:397:13: error: too many arguments to function ‘informar_PedidoProcesado’
+             informar_PedidoProcesado(list,i,len, arrayCliente, lenCliente);
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/informes.c:387:6: note: declared here
+ void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/informes.o] Error 1
+src/subdir.mk:30: fallo en las instrucciones para el objetivo 'src/informes.o'
+"make all" terminated with exit code 2. Build might be incomplete.
+21:47:37 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:48:03 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_UnPedidoProcesado’:
+../src/informes.c:377:26: warning: unknown conversion type character 0xa in format [-Wformat=]
+      printf("%d   %s%.2f%\n",list[index].id, arrayCliente[indexCliente].cuit, promedioReciclado);
+                          ^
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:48:26 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:49:31 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+../src/Parcial.c: In function ‘main’:
+../src/Parcial.c:177:22: warning: implicit declaration of function ‘informar_PedidoProcesado’ [-Wimplicit-function-declaration]
+                      informar_PedidoProcesado(pedido, TAM_PEDIDOS, cliente, TAM_CLIENTE);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Parcial.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:51:02 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial.d" -MT"src/Parcial.o" -o "src/Parcial.o" "../src/Parcial.c"
+Finished building: ../src/Parcial.c
+ 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:51:05 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:52:10 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:52:12 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:55:27 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:55:30 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:56:21 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_UnPedidoProcesado’:
+../src/informes.c:377:30: warning: unknown conversion type character ‘]’ in format [-Wformat=]
+      printf("%d   %s  %.2f [%]\n",list[index].id, arrayCliente[indexCliente].cuit, promedioReciclado);
+                              ^
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:56:29 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_UnPedidoProcesado’:
+../src/informes.c:377:31: warning: unknown conversion type character ‘]’ in format [-Wformat=]
+      printf("%d   %s  %.2f [\%]\n",list[index].id, arrayCliente[indexCliente].cuit, promedioReciclado);
+                               ^
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:56:38 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_UnPedidoProcesado’:
+../src/informes.c:377:29: warning: unknown conversion type character 0xa in format [-Wformat=]
+      printf("%d   %s  %.2f %\n",list[index].id, arrayCliente[indexCliente].cuit, promedioReciclado);
+                             ^
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:56:41 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:56:57 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_UnPedidoProcesado’:
+../src/informes.c:377:29: warning: unknown conversion type character 0xa in format [-Wformat=]
+      printf("%d   %s  %.2f %\n",list[index].id, arrayCliente[indexCliente].cuit, promedioReciclado);
+                             ^
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+21:57:21 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+21:59:31 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+22:00:32 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+22:03:46 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+Building file: ../src/informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informes.d" -MT"src/informes.o" -o "src/informes.o" "../src/informes.c"
+../src/informes.c: In function ‘informar_UnPedidoProcesado’:
+../src/informes.c:377:29: warning: unknown conversion type character 0xa in format [-Wformat=]
+      printf("%d   %s  %.2f %\n",list[index].id, arrayCliente[indexCliente].cuit, promedioReciclado);
+                             ^
+Finished building: ../src/informes.c
+ 
+Building target: Parcial
+Invoking: GCC C Linker
+gcc  -o "Parcial"  ./src/Parcial.o ./src/clientes.o ./src/informes.o ./src/pedidos.o ./src/validaciones.o   
+Finished building target: Parcial
+ 
+22:03:48 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.
+22:07:34 **** Incremental Build of configuration Debug for project Parcial ****
+make all 
+make: No se hace nada para 'all'.

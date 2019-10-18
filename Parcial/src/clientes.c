@@ -63,12 +63,12 @@ int hardcodear_Cliente(eCliente* list)
 {
     eCliente auxlist[]=
     {
-       {1, "MANAOS", "30-11111111-1", "Manaos 111", "Lanus", FALSE},
-       {2, "ARCOR", "30-22222222-2", "Arcor 222", "Olivos", FALSE},
-       {3, "SAMSUNG", "30-33333333-3", "Samsung 333", "Corea", FALSE},
-       {4, "SONY", "30-44444444-4", "Sony 444", "CABA", FALSE},
-       {5, "TOYOTA", "30-55555555-5", "Toyota 555", "Zarate", FALSE},
-       {6, "QUERUBIN", "30-66666666-6", "Querubin 666", "Mataderos", FALSE},
+       {1, "TELEFONICA", "30-11223344-5", "Lima 1234", "CABA", FALSE},
+       {2, "DATASOFT", "30-44556677-6", "Corrientes 2547", "CABA", FALSE},
+       {3, "NESTLE", "30-88995521-9", "cucha cucha 555", "LANUS", FALSE},
+       {4, "TERRABUSI", "30-56781423-5", "rocha 784", "QUILMES", FALSE},
+       {5, "DIA", "31-54581253-3", "Mitre 750", "AVELLANEDA", FALSE},
+       {6, "QUILMES", "30-51485759-6", "rocha 741", "QUILMES", FALSE},
     };
 
     for(int i=0; i<6; i++)

@@ -35,18 +35,17 @@ int hardcodear_Pedido(ePedido* list)
 	ePedido auxlist[]=
     {
        {1, 1, 1000, 200, 200, 200, COMPLETADO, FALSE},
-       {2, 3, 3000, 1500, 1000, 200, PENDIENTE, FALSE},
-       {3, 5, 2000, 1200, 200, 100, COMPLETADO, FALSE},
-       {4, 2, 500, 100, 150, 100, PENDIENTE, FALSE},
-       {5, 4, 800, 100, 140, 300, COMPLETADO, FALSE},
-       {6, 3, 100, 10, 50, 40, COMPLETADO, FALSE},
-       {7, 6, 1200, 120, 200, 150, PENDIENTE, FALSE},
-       {8, 2, 400, 200, 20, 10, COMPLETADO, FALSE},
-       {9, 4, 500, 150, 50, 100, PENDIENTE, FALSE},
-       {10, 1, 300, 150, 50, 20, COMPLETADO, FALSE},
+       {2, 1, 800, 210, 45, 30, COMPLETADO, FALSE},
+       {3, 2, 100, 0, 0, 0, PENDIENTE, FALSE},
+       {4, 2, 300, 0, 0, 0, PENDIENTE, FALSE},
+       {5, 3, 1500, 500, 150, 270, COMPLETADO, FALSE},
+       {6, 4, 750, 100, 50, 70, COMPLETADO, FALSE},
+       {7, 1, 200, 0, 0, 0, PENDIENTE, FALSE},
+       {8, 5, 30, 10, 5, 3, COMPLETADO, FALSE},
+       {9, 6, 456, 0, 0, 0, PENDIENTE, FALSE},
     };
 
-    for(int i=0; i<10; i++)
+    for(int i=0; i<9; i++)
     {
         if(auxlist[i].isEmpty==FALSE)
             list[i] = auxlist[i];

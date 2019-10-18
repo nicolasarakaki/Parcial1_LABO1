@@ -99,34 +99,72 @@ int buscar_PedidoById(ePedido* list, int id, int len);
 * \param list ePedido* Puntero del array de ePedido.
 * \param index int Posicion en el array.
 * \param len int Longitud del array.
+* \param arrayCliente eCliente* Puntero del array de eCliente.
+* \param lenCliente int Longitud del array.
 * \return int Devuelve (-1) si es ERROR [Longitud invalida o puntero NULL] / (0) si esta OK.
 *
 */
 int print_PedidoPendiente(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente);
 
 
-/** \brief Imprime en una lista los valores cargados en el array de Pedido.
+/** \brief Imprime en una lista los valores cargados en el array de Pedido que estan en
+ * 		   estado PENDIENTE.
  *
  * \param list ePedido*      Puntero del array de Pedido.
  * \param len int           Longitud del array de Pedido.
+ * \param arrayCliente eCliente*      Puntero del array de Cliente.
+ * \param lenCliente int           Longitud del array de Cliente.
  * \return void
  *
  */
 void listar_PedidoPendiente(ePedido* list, int len, eCliente* arrayCliente, int lenCliente);
 
 
+/** \brief Imprime en una lista los valores cargados en el array de Pedido que estan en
+ * 		   estado COMPLETADO.
+ *
+ * \param list ePedido*      Puntero del array de Pedido.
+ * \param len int           Longitud del array de Pedido.
+ * \param arrayCliente eCliente*      Puntero del array de Cliente.
+ * \param lenCliente int           Longitud del array de Cliente.
+ * \return void
+ *
+ */
 void listar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente);
 
 
-void cargarDescripcionPedido(int idPedido, char desc[]);
+//void cargarDescripcionPedido(int idPedido, char desc[]);
 
 
+/** \brief Solicita el ID que se encuentra en el array de Pedido, y permite agregar la
+ * 		   cantidad de kilos en los campos HDPE, LPDE y PP del array
+ *
+ * \param list ePedido*      Puntero del array de Pedido.
+ * \param len int           Longitud del array de Pedido.
+ * \param arrayCliente eCliente*      Puntero del array de Cliente.
+ * \param lenCliente int           Longitud del array de Cliente.
+ * \return int Devuelve (-1) si es ERROR [Longitud invalida o puntero NULL] / (0) si esta OK.
+ *
+ */
 int procesarResiduos(ePedido* list, int len, eCliente* arrayCliente, int lenCliente);
 
 
+/** \brief Cuenta la cantidad de pedidos en estado PENDIENTE que tiene cada cliente en
+ * 		   el array de Pedido.
+ *
+ * \param list ePedido*      Puntero del array de Pedido.
+ * \param len int           Longitud del array de Pedido.
+ * \param arrayCliente eCliente*      Puntero del array de Cliente.
+ * \param indexCliente int           Indice del array de Cliente.
+ * \return int Devuelve (-1) si es ERROR [Longitud invalida o puntero NULL] o, si esta OK, devuelve
+ * 			   la cantidad de pedidos.
+ *
+ */
 int cantidadPedidosXCliente(ePedido* list, int len, eCliente* arrayCliente, int indexCliente);
 
+
 int print_ClienteConPedido(ePedido* list, int len, eCliente* arrayCliente, int indexCliente, int lenCliente);
+
 
 void listar_ClienteConPedido(ePedido* list, int len, eCliente* arrayCliente, int lenCliente);
 

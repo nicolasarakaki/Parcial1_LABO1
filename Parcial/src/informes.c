@@ -25,8 +25,8 @@ int menuInformes(int reintentos, int numOpcMin, int numOpcMax)
     int auxOpcion;
 
     printf("\n -*- MENU DE INFORMES -*-\n\n ");
-    printf(" 1. Mostrar promedio de cada tipo de plasticos totales\n ");
-    printf(" 2. Mostrar Cliente con mayor cant de plasticos de cada tipo\n ");
+    printf(" 1. Mostrar Cliente con mas pedidos pendientes\n ");
+    printf(" 2. Mostrar Cliente con mas pedidos completados\n ");
     //printf(" 3. Mostrar todos los trabajos X auto seleccionado\n ");
     /*printf(" 4. LISTAR AUTOS\n ");
     printf(" 5. LISTAR MARCAS\n ");
@@ -46,6 +46,375 @@ int menuInformes(int reintentos, int numOpcMin, int numOpcMax)
     return opcion;
 }
 
+
+
+void informar_clienteConMasPendiente(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido)
+{
+	int i, j;
+	int cantPedidoMax = 0;
+	int cantPedidos=0;
+	int indexCliente;
+
+    for(i=0;i<lenCliente;i++)
+    {
+        if(arrayCliente[i].isEmpty==FALSE)
+        {
+        	for(j=0;j<lenPedido;j++)
+        	{
+        		if(arrayPedido[j].isEmpty==FALSE && arrayPedido[j].estado==PENDIENTE
+        		&& arrayPedido[j].idCliente==arrayCliente[i].id)
+        		{
+        			cantPedidos++;
+        		}
+        	}
+        	if(cantPedidos>cantPedidoMax)
+        	{
+        		cantPedidoMax = cantPedidos;
+        		indexCliente = i;
+        	}
+        	else
+        		cantPedidos=0;
+        }
+    }
+
+    printf("\nMAYOR PEDIDO PENDIENTE:");
+    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\tPedidos\n");
+    printf("--\t------\t\t----\t\t---------\t---------\t-------\n");
+    print_ClienteConPedido(arrayPedido, lenCliente, arrayCliente, indexCliente, lenCliente);
+
+}
+
+
+void informar_clienteConMasCompletado(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido)
+{
+	int i, j;
+	int cantPedidoMax = 0;
+	int cantPedidos=0;
+	int indexCliente;
+
+    for(i=0;i<lenCliente;i++)
+    {
+        if(arrayCliente[i].isEmpty==FALSE)
+        {
+        	for(j=0;j<lenPedido;j++)
+        	{
+        		if(arrayPedido[j].isEmpty==FALSE && arrayPedido[j].estado==COMPLETADO
+        		&& arrayPedido[j].idCliente==arrayCliente[i].id)
+        		{
+        			cantPedidos++;
+        		}
+        	}
+        	if(cantPedidos>cantPedidoMax)
+        	{
+        		cantPedidoMax = cantPedidos;
+        		indexCliente = i;
+        	}
+        	else
+        		cantPedidos=0;
+        }
+    }
+
+    printf("\nMAYOR PEDIDO COMPLETADO: %d", cantPedidoMax);
+    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\n");
+    printf("--\t------\t\t----\t\t---------\t---------\n");
+    print_Cliente(arrayCliente, indexCliente, lenCliente);
+
+}
+
+
+void informar_clienteConMasPedidos(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido)
+{
+	int i, j;
+	int cantPedidoMax = 0;
+	int cantPedidosPendientes=0;
+	int cantPedidosCompletados=0;
+	int cantPedidosTotal=0;
+	int indexCliente;
+
+    for(i=0;i<lenCliente;i++)
+    {
+        if(arrayCliente[i].isEmpty==FALSE)
+        {
+        	for(j=0;j<lenPedido;j++)
+        	{
+        		if(arrayPedido[j].isEmpty==FALSE && arrayPedido[j].estado==PENDIENTE
+        		&& arrayPedido[j].idCliente==arrayCliente[i].id)
+        		{
+        			cantPedidosPendientes++;
+        		}
+        	}
+
+        	for(j=0;j<lenPedido;j++)
+        	{
+        		if(arrayPedido[j].isEmpty==FALSE && arrayPedido[j].estado==COMPLETADO
+        		&& arrayPedido[j].idCliente==arrayCliente[i].id)
+        		{
+        			cantPedidosCompletados++;
+        		}
+        	}
+
+       		cantPedidosTotal = cantPedidosPendientes + cantPedidosCompletados;
+       		if(cantPedidosTotal>cantPedidoMax)
+       		{
+       			cantPedidoMax = cantPedidosTotal;
+        		indexCliente = i;
+        	}
+       		cantPedidosPendientes=0;
+        	cantPedidosCompletados=0;
+        	cantPedidosTotal=0;
+        }
+    }
+
+    printf("\nMAYOR CANT DE PEDIDOS %d:", cantPedidoMax);
+    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\n");
+    printf("--\t------\t\t----\t\t---------\t---------\n");
+    print_Cliente(arrayCliente, indexCliente, lenCliente);
+
+}
+
+
+void informar_ClienteMayorKilos(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido)
+{
+    int i;
+    int j;
+
+    int kilosMax=0;
+
+    for(i=0;i<lenPedido;i++)
+    {
+        if(arrayPedido[i].isEmpty==FALSE)
+        {
+            if(kilosMax<arrayPedido[i].kilos)
+            {
+            	kilosMax = arrayPedido[i].kilos;
+            }
+        }
+    }
+
+    printf("\nMAYOR KILOS: %d Kg", kilosMax);
+    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\n");
+    printf("--\t------\t\t----\t\t---------\t---------\n");
+    for(i=0; i<lenPedido; i++)
+    {
+    	if(arrayPedido[i].isEmpty==FALSE && arrayPedido[i].kilos == kilosMax)
+    	{
+    		for(j=0;j<lenCliente; j++)
+    		{
+    			if(arrayCliente[j].id == arrayPedido[i].idCliente)
+    				print_Cliente(arrayCliente, j, lenCliente);
+    		}
+    	}
+    }
+}
+
+
+void informar_ClienteMenorKilos(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido)
+{
+    int i;
+    int j;
+
+    int kilosMin=9999999;
+
+    for(i=0;i<lenPedido;i++)
+    {
+        if(arrayPedido[i].isEmpty==FALSE)
+        {
+            if(arrayPedido[i].kilos<kilosMin)
+            {
+            	kilosMin = arrayPedido[i].kilos;
+            }
+        }
+    }
+
+    printf("\nMENOR KILOS: %d Kg", kilosMin);
+    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\n");
+    printf("--\t------\t\t----\t\t---------\t---------\n");
+    for(i=0; i<lenPedido; i++)
+    {
+    	if(arrayPedido[i].isEmpty==FALSE && arrayPedido[i].kilos == kilosMin)
+    	{
+    		for(j=0;j<lenCliente; j++)
+    		{
+    			if(arrayCliente[j].id == arrayPedido[i].idCliente)
+    				print_Cliente(arrayCliente, j, lenCliente);
+    		}
+    	}
+    }
+}
+
+
+void informar_ClientesMas1000Kilos(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido)
+{
+    int i;
+    int indexPedido=-1;
+
+    float maxHDPE=0;
+    float maxLDPE=0;
+    float maxPP=0;
+    float total=0;
+    float cantMax=1000;
+
+    for(i=0;i<lenPedido;i++)
+    {
+        if(arrayPedido[i].isEmpty==FALSE && arrayPedido[i].estado==COMPLETADO)
+        {
+            maxHDPE = arrayPedido[i].hdpe;
+            maxPP = arrayPedido[i].pp;
+            maxLDPE = arrayPedido[i].ldpe;
+
+            total = maxHDPE + maxLDPE + maxPP;
+        }
+        if(total>cantMax)
+        {
+        	cantMax = total;
+        	indexPedido = i;
+        }
+        maxHDPE = 0;
+       	maxPP = 0;
+       	maxLDPE = 0;
+       	total=0;
+    }
+
+    printf("\nMAYOR KILOS RECICLADOS:");
+    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\n");
+    printf("--\t------\t\t----\t\t---------\t---------\n");
+
+    if(indexPedido!=-1)
+    {
+        for(i=0; i<lenCliente; i++)
+        {
+        	if(arrayCliente[i].isEmpty==FALSE && arrayCliente[i].id == arrayPedido[indexPedido].idCliente)
+        	{
+        		print_Cliente(arrayCliente, i, lenCliente);
+        		break;
+        	}
+        }
+    }
+}
+
+
+void informar_ClientesMenos100Kilos(eCliente* arrayCliente, int lenCliente, ePedido* arrayPedido, int lenPedido)
+{
+    int i;
+    int indexPedido=-1;
+
+    float maxHDPE=0;
+    float maxLDPE=0;
+    float maxPP=0;
+    float total=0;
+    float cantMin=100;
+
+    for(i=0;i<lenPedido;i++)
+    {
+        if(arrayPedido[i].isEmpty==FALSE && arrayPedido[i].estado==COMPLETADO)
+        {
+            maxHDPE = arrayPedido[i].hdpe;
+            maxPP = arrayPedido[i].pp;
+            maxLDPE = arrayPedido[i].ldpe;
+
+            total = maxHDPE + maxLDPE + maxPP;
+
+            if(total<cantMin)
+            {
+            	cantMin = total;
+            	indexPedido = i;
+            }
+            maxHDPE = 0;
+            maxPP = 0;
+            maxLDPE = 0;
+            total=0;
+        }
+    }
+
+    printf("\nMENOR KILOS RECICLADOS: %.2f Kg", cantMin);
+    printf("\n\nID\tNOMBRE\t\tCUIT\t\tDireccion\tLocalidad\n");
+    printf("--\t------\t\t----\t\t---------\t---------\n");
+    if(indexPedido!=-1)
+    {
+        for(i=0; i<lenCliente; i++)
+        {
+        	if(arrayCliente[i].isEmpty==FALSE && arrayCliente[i].id == arrayPedido[indexPedido].idCliente)
+        	{
+        		print_Cliente(arrayCliente, i, lenCliente);
+        		break;
+        	}
+        }
+    }
+}
+
+float calcularPromedioDeKilos(ePedido* arrayPedido, int index)
+{
+	float retorno=-1;
+	float total;
+	float promedio;
+	float HDPE, LPDE, PP;
+
+
+	if(arrayPedido[index].isEmpty==FALSE && arrayPedido[index].estado==COMPLETADO)
+	{
+		HDPE = arrayPedido[index].hdpe;
+		PP = arrayPedido[index].pp;
+		LPDE = arrayPedido[index].ldpe;
+		total = HDPE + LPDE + PP;
+	}
+
+	promedio = (total*100)/arrayPedido[index].kilos;
+	retorno = promedio;
+
+	return retorno;
+}
+
+int informar_UnPedidoProcesado(ePedido* list, int index, int len, eCliente* arrayCliente, int lenCliente)
+{
+    int retorno=-1;
+    int indexCliente;
+    float promedioReciclado;
+
+    indexCliente = buscar_ClienteById(arrayCliente, list[index].idCliente, lenCliente);
+    promedioReciclado = calcularPromedioDeKilos(list, index);
+    if(list!=NULL && index<len)
+    {
+    	printf("%d   %s		%.2f %\n",list[index].id, arrayCliente[indexCliente].cuit, promedioReciclado);
+        retorno=0;
+    }
+    else
+    {
+        printf("Error al imprimir los datos del musico \n");
+    }
+    return retorno;
+}
+
+void informar_PedidoProcesado(ePedido* list, int len, eCliente* arrayCliente, int lenCliente)
+{
+    int i;
+
+    printf("\n\nID\tCUIT\t\tPORCENTAJE RECICLADO\n");
+    printf("--\t----\t\t--------------------\n");
+    for(i=0;i<len;i++)
+    {
+        if(list[i].isEmpty==FALSE && list[i].estado==COMPLETADO)
+        {
+        	informar_UnPedidoProcesado(list,i,len, arrayCliente, lenCliente);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------------------------------------------------------------------------------------------
 ///PROMEDIO DEL TOTAL DE CADA TIPO DE PLASTICO DE TODOS LOS PEDIDOS
 void informar_promedioDelTipoPlastico(ePedido* arrayPedido, int lenPedido)
 {
