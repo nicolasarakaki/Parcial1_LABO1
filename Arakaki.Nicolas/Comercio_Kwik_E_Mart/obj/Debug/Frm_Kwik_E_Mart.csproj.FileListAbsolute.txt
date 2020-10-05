@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\bin\Debug\Comercio_Kwik_E_Mart.exe.config
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\bin\Debug\Comercio_Kwik_E_Mart.exe
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\bin\Debug\Comercio_Kwik_E_Mart.pdb
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Frm_Kwik_E_Mart.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Comercio_Kwik_E_Mart.FrmComercio.resources
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Comercio_Kwik_E_Mart.FrmCompra.resources
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Comercio_Kwik_E_Mart.Properties.Resources.resources
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Frm_Kwik_E_Mart.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Comercio_Kwik_E_Mart.exe
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Comercio_Kwik_E_Mart.pdb
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\bin\Debug\Entidades.dll
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\bin\Debug\Entidades.pdb
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Frm_Kwik_E_Mart.csproj.CopyComplete
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Comercio_Kwik_E_Mart.FrmEditarProductos.resources
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Comercio_Kwik_E_Mart.FrmEditProdSelect.resources
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Comercio_Kwik_E_Mart.FrmVer.resources
+C:\Users\User\Desktop\Arakaki.Nicolas\Comercio_Kwik_E_Mart\obj\Debug\Comercio_Kwik_E_Mart.FrmLogin.resources
